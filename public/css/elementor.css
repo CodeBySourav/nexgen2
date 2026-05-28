@@ -1,0 +1,74 @@
+/*----------------------------------------------
+*
+* [Elementor Stylesheet]
+*
+* Theme    : Nexgen
+* Version  : 1.0
+* Author   : Codings
+* Support  : codings.dev
+* 
+----------------------------------------------*/
+
+/*----------------------------------------------
+
+[ALL CONTENTS]
+
+1. Glutter
+2. Conflict
+
+----------------------------------------------*/
+
+/*----------------------------------------------
+1. Glutter
+----------------------------------------------*/
+
+/* #region Glutter */
+
+.elementor-section .elementor-container.elementor-column-gap-extended {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.elementor-section .elementor-container.elementor-column-gap-wide {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.elementor-section .elementor-container.elementor-column-gap-wider {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+/* #endregion Glutter */
+
+/*----------------------------------------------
+2. Fix
+----------------------------------------------*/
+
+/* #region Fix */
+
+.elementor-widget-container .carousel {
+  margin-left: -30px ! important;
+  margin-right: 0 ! important;
+}
+
+.elementor-widget-container .showcase {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.elementor-widget-container .blog-grid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.elementor-widget-container .gallery.items {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.lg-on .elementor-lightbox {
+  display: none ! important; 
+}
+
+/* #endregion Fix */
