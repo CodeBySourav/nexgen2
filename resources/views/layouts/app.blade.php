@@ -373,10 +373,10 @@
                     }
 
                     [data-aos]{
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important;
-    }
+                        opacity: 1 !important;
+                        transform: none !important;
+                        transition: none !important;
+                    }
                 }
         
             @media (max-width: 767px) {
@@ -466,8 +466,15 @@
                         <a href="#" target="_self" class="nav-link m-0"><i
                                 class="fab fa-linkedin-in m-0"></i></a>
                     </li>
-
-
+                    <li class="nav-item dropdown language-dropdown">
+                        <select onchange="changeLanguage(this.value)" class="form-control lang-select">
+                            <option value="en">English</option>
+                            <option value="ar">Arabic</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </li>
                 </ul>
 
 
@@ -551,68 +558,8 @@
 
     @yield('content')
 <!-- Google Translate -->
-<div id="google_translate_element" style="display:none;"></div>
-
-<style>
-.goog-te-banner-frame.skiptranslate {
-    display: none !important;
-}
-
-body {
-    top: 0 !important;
-}
-
-.skiptranslate iframe {
-    display: none !important;
-}
-</style>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-
-    new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,fr,es,de,it,ar,hi,ru,zh-CN,ja',
-        autoDisplay: false
-    }, 'google_translate_element');
-
-    autoTranslate();
-}
-
-function autoTranslate() {
-
-    let userLang = navigator.language || navigator.userLanguage;
-
-    userLang = userLang.substring(0, 2);
-
-    // supported languages
-    const allowed = ['fr','es','de','it','ar','hi','ru','zh-CN','ja'];
-
-    if (allowed.includes(userLang)) {
-
-        document.cookie = "googtrans=/en/" + userLang + ";path=/";
-
-        document.cookie = "googtrans=/en/" + userLang + ";domain=" + window.location.hostname + ";path=/";
-
-        const translateInterval = setInterval(() => {
-
-            const combo = document.querySelector('.goog-te-combo');
-
-            if (combo) {
-
-                combo.value = userLang;
-                combo.dispatchEvent(new Event('change'));
-
-                clearInterval(translateInterval);
-            }
-
-        }, 1000);
-    }
-}
-</script>
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    {{-- FOOTER --}}
+ 
+  {{-- FOOTER --}}
     <footer data-wpr-lazyrender="1" id="footer" class="footer">
 
 
@@ -1016,6 +963,90 @@ function autoTranslate() {
         </div>
     </div>
 </div>
+
+
+<!-- Google Translate -->
+<!-- Google Translate -->
+
+<div id="google_translate_element" style="display:none"></div>
+
+<style>
+    body {
+        top: 0 !important;
+        position: static !important;
+        min-height: auto !important;
+    }
+
+    html {
+        margin-top: 0 !important;
+    }
+
+    .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+    }
+
+    iframe.skiptranslate {
+        display: none !important;
+    }
+
+    .goog-te-gadget-icon {
+        display: none !important;
+    }
+
+    .goog-tooltip {
+        display: none !important;
+    }
+
+    .goog-text-highlight {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    #google_translate_element {
+        display: none !important;
+    }
+</style>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,ar,fr,de,hi',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    function changeLanguage(lang) {
+
+        var interval = setInterval(function () {
+
+            var select = document.querySelector(".goog-te-combo");
+
+            if (select) {
+                select.value = lang;
+                select.dispatchEvent(new Event("change"));
+
+                document.body.style.top = "0px";
+                clearInterval(interval);
+            }
+
+        }, 300);
+    }
+
+    setInterval(function () {
+
+        document.body.style.top = "0px";
+
+        let frame = document.querySelector(".goog-te-banner-frame");
+
+        if (frame) {
+            frame.remove();
+        }
+
+    }, 500);
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
