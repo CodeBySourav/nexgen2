@@ -265,7 +265,7 @@
                 section.section-3  { background-color: #111117;  background-image: images/bg-1.jpg; }
                 </style>
                 <!-- Hero --> 
-                
+
                 <style>
                 @media (max-width: 991px){
         
@@ -371,6 +371,12 @@
                     .slider-h-auto.no-slider .inner {
                         padding-top: 0px;
                     }
+
+                    [data-aos]{
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
                 }
         
             @media (max-width: 767px) {
@@ -910,6 +916,105 @@
             });
         });
     </script>
+
+
+    <!-- Search Modal -->
+<div id="search" class="p-0 modal modal-search fade" role="dialog">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-left"></i>
+            </div>
+
+            <div class="modal-body">
+                <form class="row">
+                    <div class="col-12 p-0 align-self-center">
+
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <h2>What are you looking for?</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 p-0 input-group">
+                                <input type="search" placeholder="Enter Keywords">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 p-0 input-group align-self-center">
+                                <button class="btn primary-button">SEARCH</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Menu Modal -->
+<div id="menu" class="p-0 modal modal-menu fade" role="dialog">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+
+            <div class="modal-header" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-left"></i>
+            </div>
+
+            <div class="menu modal-body">
+
+                <ul class="navbar-nav items">
+                    <li class="nav-item">
+                        <a href="{{ route('home') }}" class="nav-link">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('about') }}" class="nav-link">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('services-hedgefunds') }}" class="nav-link">
+                            HEDGE FUNDS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('services-treasuryfunds') }}" class="nav-link">
+                            TREASURY FUNDS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('contact') }}" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Modal -->
+<div id="cart" class="p-0 modal modal-cart fade" role="dialog">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+
+            <div class="modal-header" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-left"></i>
+            </div>
+
+            <div class="modal-body">
+                <div class="widget woocommerce widget_shopping_cart">
+                    <div class="widget_shopping_cart_content"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
