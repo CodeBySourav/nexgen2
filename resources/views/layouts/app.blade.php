@@ -1033,7 +1033,7 @@
         }, 300);
     }
 
-    setInterval(function () {
+    setInterval(function () {                
 
         document.body.style.top = "0px";
 
