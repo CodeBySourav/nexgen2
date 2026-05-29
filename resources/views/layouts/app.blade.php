@@ -661,7 +661,7 @@
                             <ul id="menu-nexgen-footer-1" class="footer-link-list">
                                 <li id="menu-item-10684"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10684"><a
-                                        href="#">About us</a></li>
+                                        href="{{ route('about') }}">About us</a></li>
                                 <li id="menu-item-10684"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10684"><a
                                         href="{{ route('contact') }}">Contact </a></li>
