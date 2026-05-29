@@ -470,9 +470,6 @@
                         <select onchange="changeLanguage(this.value)" class="form-control lang-select">
                             <option value="en">English</option>
                             <option value="ar">Arabic</option>
-                            <option value="fr">French</option>
-                            <option value="de">German</option>
-                            <option value="hi">Hindi</option>
                         </select>
                     </li>
                 </ul>
