@@ -330,28 +330,30 @@
                                                 <div class="offers card-pulse-icon">
                                                     <div class="items">
                                                         <div class="item">
-                                                            <div class="card">
+                                                            <a href="{{ route('services-hedgefunds') }}" class="text-decoration-none">
+                                                                
+                                                                <div class="card">
 
-                                                                <div class="icon-wrapper mr-auto">
-                                                                    <i class="card-icon icon-organization"></i>
+                                                                    <div class="icon-wrapper mr-auto">
+                                                                        <i class="card-icon icon-organization"></i>
+                                                                    </div>
+
+                                                                    <div class="text-left">
+                                                                        <h4 class="heading">
+                                                                            Hedge Fund
+                                                                        </h4>
+                                                                    </div>
+
+                                                                    <div class="text-left">
+                                                                        <p class="paragraph">
+                                                                            Lorem ipsum dolor sit amet consectetur
+                                                                            adipiscing elit.
+                                                                        </p>
+                                                                    </div>
+
                                                                 </div>
 
-                                                                <div class="text-left">
-                                                                    <h4 class="heading">
-                                                                        Hedge Fund </h4>
-                                                                </div>
-
-                                                                <div class="text-left">
-                                                                    <p class="paragraph">
-                                                                        Lorem ipsum dolor sit amet consectetur
-                                                                        adipiscing elit. </p>
-                                                                </div>
-
-
-                                                                <a href="" class="full-link"></a>
-
-
-                                                            </div>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -374,33 +376,35 @@
                                                 <div class="offers card-pulse-icon">
                                                     <div class="items">
                                                         <div class="item">
-                                                            <div class="card">
 
-                                                                <div class="icon-wrapper mr-auto">
-                                                                    <i class="card-icon icon-briefcase"></i>
+                                                            <a href="{{ route('services-treasuryfunds') }}" class="text-decoration-none">
+
+                                                                <div class="card">
+
+                                                                    <div class="icon-wrapper mr-auto">
+                                                                        <i class="card-icon icon-briefcase"></i>
+                                                                    </div>
+
+                                                                    <div class="text-left">
+                                                                        <h4 class="heading">
+                                                                            Treasury Management
+                                                                        </h4>
+                                                                    </div>
+
+                                                                    <div class="text-left">
+                                                                        <p class="paragraph">
+                                                                            Lorem ipsum dolor sit amet consectetur
+                                                                            adipiscing elit.
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <i class="btn-icon pulse-icon fas fa-arrow-right"
+                                                                        data-color="#dbc49d"></i>
+
                                                                 </div>
 
-                                                                <div class="text-left">
-                                                                    <h4 class="heading">
-                                                                        Treasury management </h4>
-                                                                </div>
+                                                            </a>
 
-                                                                <div class="text-left">
-                                                                    <p class="paragraph">
-                                                                        Lorem ipsum dolor sit amet consectetur
-                                                                        adipiscing elit. </p>
-                                                                </div>
-
-
-                                                                <a href="#" class="full-link" target=""
-                                                                    _blank""="" rel="" nofollow""=""></a>
-
-
-                                                                <i class="btn-icon pulse-icon fas fas fa-arrow-right"
-                                                                    data-color="#dbc49d"></i>
-
-
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
