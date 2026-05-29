@@ -978,6 +978,7 @@
         margin-top: 0 !important;
     }
 
+    /* Hide top translate banner */
     .goog-te-banner-frame.skiptranslate {
         display: none !important;
     }
@@ -986,21 +987,31 @@
         display: none !important;
     }
 
-    .goog-te-gadget-icon {
+    /* Hide translate tooltip */
+    .goog-tooltip,
+    .goog-tooltip:hover {
         display: none !important;
     }
 
-    .goog-tooltip {
-        display: none !important;
-    }
-
+    /* Remove text highlight */
     .goog-text-highlight {
         background: transparent !important;
         box-shadow: none !important;
     }
 
+    /* Hide Google translate widget */
     #google_translate_element {
         display: none !important;
+    }
+
+    /* Hide translation popup / feedback */
+    .VIpgJd-ZVi9od-ORHb-OEVmcd,
+    .VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+    .VIpgJd-yAWNEb-L7lbkb,
+    .goog-te-balloon-frame,
+    div[style*="translate.googleapis.com"] {
+        display: none !important;
+        visibility: hidden !important;
     }
 </style>
 
