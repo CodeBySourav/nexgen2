@@ -223,7 +223,16 @@
         </div>
     </div>
 </section> 
-
+<style>
+section {
+        position: relative;
+        width: 100%;
+        padding: 130px 0;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center; 
+        }
+</style>
 </body>
 
 @endsection

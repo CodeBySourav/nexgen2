@@ -238,13 +238,7 @@
             font-weight: 500;
         } 
 
-        section {
-        position: relative;
-        width: 100%;
-        padding: 130px 0;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center; }
+        
         .hero {
                     position: relative;
                 }
@@ -267,16 +261,9 @@
     {{-- css internal  --}}
     {{-- Boss internal css  --}}
         <style>
-                section {
-                position: relative;
-                width: 100%;
-                padding: 130px 0;
-                background-size: cover;
-                background-attachment: fixed;
-                background-position: center; }
+                 
                 section.section-3  { background-color: #111117;  background-image: images/bg-1.jpg; }
                 </style>
-            <div data-elementor-type="wp-page" data-elementor-id="6480" class="elementor elementor-6480">
                 <!-- Hero -->
                 <!-- Hero -->
 
@@ -285,11 +272,11 @@
                 @media (max-width: 991px){
         
                     /* ── CORE FIX: prevent horizontal overflow and white gap ── */
-                    html, body {
+                    /* html, body {
                         overflow-x: hidden !important;
                         width: 100% !important;
                         max-width: 100% !important;
-                    }
+                     } */
         
                     /* Force slider to full width, hide overflow */
                     #slider {
