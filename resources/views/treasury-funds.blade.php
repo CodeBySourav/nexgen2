@@ -28,27 +28,28 @@
                                         <span class="pre-title m-0">Fusions & acquisitions</span>
                                            </br>Treasury Funds
                                     </h1>
-                                    
+                                     
                                     <!-- Action -->
-                                    <form action="php/form.php" id="nexgen-simple-form" class="nexgen-simple-form">
-                                        <input type="hidden" name="section" value="nexgen_form">
-    
-                                        <input type="hidden" name="reCAPTCHA">
-                                        <!-- Remove this field if you want to disable recaptcha -->
-    
+                                    @if(session('success'))
+                                        <div class="alert alert-success">
+                                            {{ session('success') }}
+                                        </div>
+                                    @endif
+                                    <form action="{{ route('contact.submit') }}" method="POST" id="nexgen-simple-form" class="nexgen-simple-form">
+                                         @csrf
                                         <div class="row form-group-margin">
                                             <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                                <input type="text" name="name" class="form-control field-name" placeholder="Name">
+                                                <input type="text" name="name" class="form-control field-name" placeholder="Name" required>
                                             </div>
                                             <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                                <input type="email" name="email" class="form-control field-email" placeholder="Email">
+                                                <input type="email" name="email" class="form-control field-email" placeholder="Email" required>
                                             </div>
                                             <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                                <input type="text" name="phone" class="form-control field-phone" placeholder="Phone">
+                                                <input type="text" name="phone" class="form-control field-phone" placeholder="Phone"  required>
                                             </div>
                                             <div class="col-12 col-md-6 m-0 p-2 input-group">
                                                 <i class="icon-arrow-down mr-3"></i>
-                                                <select name="info" class="form-control field-info">
+                                                <select name="info" class="form-control field-info" required>
                                                     <option value="" selected disabled>More Info</option>
                                                     <option>Audit & Assurance</option>
                                                     <option>Treasury Funds</option>
@@ -66,8 +67,11 @@
                                             <!-- Action -->
                                             <div class="col-12 input-group m-0 p-2 buttons">
                                                 <div class="d-sm-inline-flex">
-                                                    <a class="mt-4 mt-sm-0 btn primary-button mb-1">GET IN TOUCH</a>
-                                                     
+                                                    <div class="col-12 input-group m-0 p-2 buttons">
+                                                        <button type="submit" class="btn primary-button">
+                                                            GET IN TOUCH
+                                                        </button>
+                                                    </div> 
                                                 </div>
                                             </div>
                                         </div>

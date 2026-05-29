@@ -5,6 +5,8 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Contact_RequestsController;
+
 
 Route::get('/', function () {
     return view('home');
@@ -30,6 +32,9 @@ Route::get('/service-hedge-funds', function () {
 Route::get('/service-treasury-funds', function () {
     return view('treasury-funds');
 })->name('services-treasuryfunds');
+
+Route::post('/contact-submit', [Contact_RequestsController::class, 'store'])->name('contact.submit');
+
 
 Route::get('/blog', [PostController::class, 'blog'])->name('blog.index');
 Route::get('/blog/{slug}', [PostController::class, 'showBlog'])->name('blog.show');
