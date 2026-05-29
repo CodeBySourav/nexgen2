@@ -264,19 +264,17 @@
                  
                 section.section-3  { background-color: #111117;  background-image: images/bg-1.jpg; }
                 </style>
-                <!-- Hero -->
-                <!-- Hero -->
-
-
+                <!-- Hero --> 
+                
                 <style>
                 @media (max-width: 991px){
         
                     /* ── CORE FIX: prevent horizontal overflow and white gap ── */
-                    /* html, body {
+                    html, body {
                         overflow-x: hidden !important;
                         width: 100% !important;
                         max-width: 100% !important;
-                     } */
+                    }
         
                     /* Force slider to full width, hide overflow */
                     #slider {
