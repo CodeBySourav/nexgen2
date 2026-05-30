@@ -392,7 +392,10 @@
                 .navbar.top .right .nav-item:nth-child(5) {
                     display: none !important;
                 }
-            
+                .navbar.top .navbar-nav .nav-item a:not(.btn) {
+                    padding-right: 0;
+                    padding-left: 0;
+                } 
             }
          </style>
     {{-- Boss internal css  --}}
@@ -444,7 +447,7 @@
                     <li class="nav-item">
 
                         <a href="#" target="_self" class="nav-link m-0"><i
-                                class="fas fa-envelope text-after"></i>oceanoapexdubai@icloud.com</a>
+                                class="fas fa-envelope text-after"></i>dubai@oceanoapex.com</a>
                     </li>
 
 

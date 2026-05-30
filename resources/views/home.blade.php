@@ -1475,14 +1475,14 @@
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a href="mailto:oceanoapexdubai@icloud.com" target=""
+                                                            <a href="mailto:dubai@oceanoapex.com" target=""
                                                                 _blank""="" rel="" nofollow""=""
                                                                 class="nav-link text-left">
                                                                 <div class="icon-wrapper">
                                                                     <i class="list-icon fas fa-envelope"></i>
                                                                 </div>
                                                                 <span class="list-text">
-                                                                    oceanoapexdubai@icloud.com </span>
+                                                                    dubai@oceanoapex.com </span>
                                                             </a>
                                                         </li>
                                                         <li class="nav-item">
