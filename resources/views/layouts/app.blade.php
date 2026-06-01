@@ -289,7 +289,7 @@
                     #slider .swiper-container,
                     #slider .swiper-wrapper,
                     #slider .swiper-slide {
-                        display: block !important;
+                        display: contents !important;
                         width: 100% !important;
                         max-width: 100% !important;
                         overflow: hidden !important;
@@ -340,7 +340,7 @@
                         background-size: cover;
                         background-position: center top;
                         background-repeat: no-repeat;
-                        padding: 25px 10px 100px;
+                        padding: 100px 10px 20px;
                         border-radius: 0;
                         color: #fff;
                         display: flex;
