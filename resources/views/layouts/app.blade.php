@@ -340,7 +340,7 @@
                         background-size: cover;
                         background-position: center top;
                         background-repeat: no-repeat;
-                        padding: 100px 10px 20px;
+                        padding: 100px 10px 50px;
                         border-radius: 0;
                         color: #fff;
                         display: flex;
