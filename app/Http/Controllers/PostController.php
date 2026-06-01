@@ -56,7 +56,28 @@ class PostController extends Controller
 
     public function update(Request $request, string $id)
     {
-        // update post here
+        $post = Post::findOrFail($id);
+
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'content' => 'nullable|string',
+            'seo_title' => 'nullable|string|max:255',
+            'seo_description' => 'nullable|string',
+            'schema_markup' => 'nullable|string',
+        ]);
+
+        $post->update([
+            'title' => $request->title,
+            'slug' => Str::slug($request->title),
+
+            'content' => $request->content,
+
+            'seo_title' => $request->seo_title,
+            'seo_description' => $request->seo_description,
+            'schema_markup' => $request->schema_markup,
+
+            'status' => $request->has('status') ? 1 : 0,
+        ]);
 
         return redirect()->route('posts.index')
             ->with('success', 'Post updated successfully.');

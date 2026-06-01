@@ -7,93 +7,249 @@
         <button onclick="this.parentElement.remove()" class="text-green-700 font-bold">×</button>
     </div>
 @endif
-<main class=" ">
+<!-- DataTables CSS --> 
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/dataTables.tailwindcss.min.css">
+ 
+<main>
+
     <!-- Header -->
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+
         <div>
             <h1 class="text-2xl font-bold text-gray-800">Site Pages</h1>
-            <p class="text-gray-500 text-sm">Manage your static content like About Us, Privacy Policy, and FAQ.</p>
+            <p class="text-gray-500 text-sm">
+                Manage your static content like About Us, Privacy Policy, and FAQ.
+            </p>
         </div>
-        <a href="{{ route('pages.create') }}" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 shadow-sm transition-all">
+
+        <a href="{{ route('pages.create') }}"
+           class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 shadow-sm transition-all">
+
             <i class="fas fa-plus"></i>
             Add New Page
+
         </a>
+
     </div>
 
-    <!-- Page List Table -->
-    <div class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+    <!-- Card -->
+    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+
         <div class="overflow-x-auto">
-            <table class="w-full text-left border-collapse">
-                <thead>
-                    <tr class="bg-gray-50 text-gray-400 text-xs uppercase font-bold">
-                        <th class="px-6 py-4">Page Title</th>
-                        <th class="px-6 py-4">URL Slug</th>
-                        <th class="px-6 py-4">Visibility</th>
-                        <th class="px-6 py-4">Last Updated</th>
+
+            <table id="pagesTable" class="w-full text-sm text-left">
+
+                <thead class="bg-gray-50 text-gray-500 uppercase text-xs">
+                    <tr>
+                        <th class="px-6 py-4">Page</th>
+                        <th class="px-6 py-4">Slug</th>
+                        <th class="px-6 py-4">Status</th>
+                        <th class="px-6 py-4">Updated</th>
                         <th class="px-6 py-4 text-right">Actions</th>
                     </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-100">
-                    {{-- Loop through pages from Controller --}}
+
+                <tbody>
+
                     @forelse($pages as $page)
-                    <tr class="hover:bg-gray-50/50 transition-colors">
+
+                    <tr class="border-t border-gray-100 hover:bg-gray-50 transition">
+
+                        <!-- Page -->
                         <td class="px-6 py-4">
+
                             <div class="flex items-center gap-3">
-                                <div class="w-8 h-8 rounded bg-indigo-100 text-indigo-600 flex items-center justify-center">
-                                    <i class="fas fa-file-alt text-xs"></i>
+
+                                @php preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $page->content, $matches); $image = $matches['src'] ?? 'https://placehold.co/100x100/e2e8f0/64748b?text=Page'; @endphp <img src="{{ $image }}" alt="{{ $page->title }}" class="w-14 h-14 rounded-2xl object-cover border border-gray-200 shadow-sm">
+
+                                <div>
+
+                                    <h4 class="font-semibold text-gray-800">
+                                        {{ $page->title }}
+                                    </h4>
+
+                                    <p class="text-xs text-gray-400 mt-1">
+                                        {{ Str::limit(strip_tags($page->content), 60) }}
+                                    </p>
+
                                 </div>
-                                <span class="font-semibold text-gray-800 text-sm">{{ $page->title }}</span>
+
                             </div>
+
                         </td>
+
+                        <!-- Slug -->
                         <td class="px-6 py-4">
-                            <code class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">/{{ $page->slug }}</code>
+
+                            
+                            <a href="{{ route('pages.show', $page->slug) }}"
+                            target="_blank"
+                            class="text-indigo-600 hover:underline">
+
+                                /page/{{ $page->slug }}
+
+                            </a>
+                             
+
+
                         </td>
+
+                        <!-- Status -->
                         <td class="px-6 py-4">
-                            @if($page->is_published)
-                                <span class="flex items-center gap-1.5 text-green-600 text-xs font-bold">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> Public
+
+                            @if($page->status)
+
+                                <span class="bg-green-100 text-green-700 text-[11px] font-bold px-3 py-1 rounded-full">
+                                    Published
                                 </span>
+
                             @else
-                                <span class="flex items-center gap-1.5 text-gray-400 text-xs font-bold">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Hidden
+
+                                <span class="bg-yellow-100 text-yellow-700 text-[11px] font-bold px-3 py-1 rounded-full">
+                                    Draft
                                 </span>
+
                             @endif
+
                         </td>
-                        <td class="px-6 py-4 text-sm text-gray-500">
-                            {{ $page->updated_at->format('M d, Y') }}
+
+                        <!-- Date -->
+                        <td class="px-6 py-4 text-gray-500">
+                            {{ $page->updated_at->format('d M Y') }}
                         </td>
-                        <td class="px-6 py-4 text-right">
-                            <div class="flex justify-end gap-2">
 
-                                    <a href="{{ route('pages.edit', $page->id) }}"
-                                    class="p-2 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-all">
-                                        <i class="fas fa-edit text-sm"></i>
-                                    </a>
+                        <!-- Actions -->
+                        <td class="px-6 py-4">
 
-                                    <form action="{{ route('pages.destroy', $page->id) }}"
-                                        method="POST"
-                                        onsubmit="return confirm('Delete this page?')">
+                            <div class="flex items-center justify-end gap-3">
 
-                                        @csrf
-                                        @method('DELETE')
+                                <!-- Edit -->
+                                <a href="{{ route('pages.edit', $page->id) }}"
+                                   class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center hover:bg-indigo-100 transition">
 
-                                        <button class="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all">
-                                            <i class="fas fa-trash text-sm"></i>
-                                        </button>
+                                    <i class="fas fa-edit"></i>
 
-                                    </form>
+                                </a>
 
-                                </div>
+                                <!-- Delete -->
+                                <form action="{{ route('pages.destroy', $page->id) }}"
+                                      method="POST"
+                                      onsubmit="return confirm('Delete this page?')">
+
+                                    @csrf
+                                    @method('DELETE')
+
+                                    <button type="submit"
+                                            class="w-9 h-9 rounded-lg bg-red-50 text-red-600 flex items-center justify-center hover:bg-red-100 transition">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </form>
+
+                            </div>
+
                         </td>
+
                     </tr>
+
                     @empty
+
                     <tr>
-                        <td colspan="5" class="px-6 py-10 text-center text-gray-400">No pages found.</td>
+                        <td colspan="5" class="text-center py-10 text-gray-400">
+                            No pages found.
+                        </td>
                     </tr>
+
                     @endforelse
+
                 </tbody>
+
             </table>
+
         </div>
+
     </div>
+
 </main>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- DataTables -->
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
+<script>
+$(document).ready(function () {
+
+    $('#pagesTable').DataTable({
+
+        responsive: true,
+
+        pageLength: 10,
+
+        language: {
+            search: "",
+            searchPlaceholder: "Search pages...",
+            lengthMenu: "Show _MENU_ pages",
+            info: "Showing _START_ to _END_ of _TOTAL_ pages",
+            paginate: {
+                previous: "←",
+                next: "→"
+            }
+        },
+
+        dom:
+            '<"flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-6 border-b border-gray-100"lf>' +
+            't' +
+            '<"flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-6 border-t border-gray-100"ip>'
+
+    });
+
+});
+</script>
+
+<style>
+
+/* Search */
+.dataTables_filter input {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    background: #f9fafb !important;
+    outline: none !important;
+    margin-left: 10px !important;
+}
+
+/* Dropdown */
+.dataTables_length select {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 10px !important;
+    padding: 6px 10px !important;
+    background: #f9fafb !important;
+}
+
+/* Pagination */
+.dataTables_paginate .paginate_button {
+    border-radius: 10px !important;
+    margin: 0 3px !important;
+}
+
+/* Active */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #4f46e5 !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #eef2ff !important;
+    color: #4f46e5 !important;
+    border: none !important;
+}
+
+</style>
+ 
 @endsection

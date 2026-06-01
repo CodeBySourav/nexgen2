@@ -9,7 +9,10 @@ class Page extends Model
     protected $fillable = [
         'title',
         'slug',
+        'seo_title',
+        'seo_description',
+        'schema_markup',
         'content',
-        'is_active',
+        'status',
     ];
 }
