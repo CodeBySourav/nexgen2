@@ -340,7 +340,7 @@
                         background-size: cover;
                         background-position: center top;
                         background-repeat: no-repeat;
-                        padding: 25px 20px 40px;
+                        padding: 25px 10px 100px;
                         border-radius: 0;
                         color: #fff;
                         display: flex;
@@ -351,8 +351,8 @@
         
                     /* Heading */
                     #slider h1.title {
-                        font-size: 52px;
-                        line-height: 1.1;
+                        font-size: 35px;
+                        line-height: 0.5;
                         color: #fff;
                         margin-bottom: 30px;
                     }
