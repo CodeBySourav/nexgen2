@@ -39,8 +39,6 @@ Route::post('/contact-submit', [Contact_RequestsController::class, 'store'])->na
 Route::get('/blog', [PostController::class, 'blog'])->name('blog.index');
 Route::get('/blog/{slug}', [PostController::class, 'showBlog'])->name('blog.show');
  
-Route::get('page/{slug}', [PageController::class, 'show'])->name('pages.show');
- 
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])
@@ -57,3 +55,6 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('{slug}', [PageController::class, 'show'])->name('pages.show');
+ 

@@ -86,7 +86,7 @@
                             target="_blank"
                             class="text-indigo-600 hover:underline">
 
-                                /page/{{ $page->slug }}
+                                /{{ $page->slug }}
 
                             </a>
                              
