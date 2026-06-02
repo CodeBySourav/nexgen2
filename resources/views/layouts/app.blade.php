@@ -386,7 +386,22 @@
                 <ul id="menu-nexgen-menu-1" class="navbar-nav items right">
                     <li class="menu-item nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
                     <li class="menu-item nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
-                    <li class="menu-item nav-item"><a href="#" class="nav-link">SERVICES</a></li>
+                    <li class="menu-item nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SERVICES
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="{{ asset('service-hedge-funds') }}">
+                                Hedge Funds
+                            </a>
+
+                            <a class="dropdown-item" href="{{ asset('service-treasury-funds') }}">
+                                Treasury Funds
+                            </a>
+                        </div>
+                    </li>
                     <li class="menu-item nav-item"><a href="#" class="nav-link">BLOG</a></li>
                 </ul>
                 <ul class="navbar-nav toggle">
@@ -448,8 +463,8 @@
                         <div class="card">
                             <h4>Services</h4>
                             <ul class="footer-link-list">
-                                <li><a href="{{ route('services-hedgefunds') }}">Hedge Funds</a></li>
-                                <li><a href="{{ route('services-treasuryfunds') }}">Treasury Funds</a></li>
+                                <li><a href="{{ asset('service-hedge-funds') }}">Hedge Funds</a></li>
+                                <li><a href="{{ asset('service-treasury-funds') }}">Treasury Funds</a></li>
                             </ul>
                         </div>
                     </div>

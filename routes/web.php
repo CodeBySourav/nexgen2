@@ -25,13 +25,13 @@ Route::get('/service', function () {
     return view('service');
 })->name('service');
 
-Route::get('/service-hedge-funds', function () {
-    return view('hedge-funds');
-})->name('services-hedgefunds');
+// Route::get('/service-hedge-funds', function () {
+//     return view('hedge-funds');
+// })->name('services-hedgefunds');
 
-Route::get('/service-treasury-funds', function () {
-    return view('treasury-funds');
-})->name('services-treasuryfunds');
+// Route::get('/service-treasury-funds', function () {
+//     return view('treasury-funds');
+// })->name('services-treasuryfunds');
 
 Route::post('/contact-submit', [Contact_RequestsController::class, 'store'])->name('contact.submit');
 

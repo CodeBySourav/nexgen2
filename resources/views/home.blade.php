@@ -299,7 +299,7 @@
                                                 <div class="offers card-pulse-icon">
                                                     <div class="items">
                                                         <div class="item">
-                                                            <a href="{{ route('services-hedgefunds') }}" class="text-decoration-none">
+                                                            <a href="{{ asset('service-hedge-funds') }}" class="text-decoration-none">
                                                                 <div class="card">
                                                                     <div class="icon-wrapper mr-auto">
                                                                         <i class="card-icon icon-organization"></i>
@@ -334,7 +334,7 @@
                                                 <div class="offers card-pulse-icon">
                                                     <div class="items">
                                                         <div class="item">
-                                                            <a href="{{ route('services-treasuryfunds') }}" class="text-decoration-none">
+                                                            <a href="{{ asset('service-treasury-funds') }}" class="text-decoration-none">
                                                                 <div class="card">
                                                                     <div class="icon-wrapper mr-auto">
                                                                         <i class="card-icon icon-briefcase"></i>
