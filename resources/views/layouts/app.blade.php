@@ -393,11 +393,11 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <a class="dropdown-item" href="{{ asset('service-hedge-funds') }}">
+                            <a class="dropdown-item" href="{{ asset('service-hedge-funds') }}" style="color: black;">
                                 Hedge Funds
                             </a>
 
-                            <a class="dropdown-item" href="{{ asset('service-treasury-funds') }}">
+                            <a class="dropdown-item" href="{{ asset('service-treasury-funds') }}" style="color: black;">
                                 Treasury Funds
                             </a>
                         </div>
