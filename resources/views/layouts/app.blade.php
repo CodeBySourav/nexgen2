@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/default.css') }}">
 
-
     <link rel="stylesheet" id="nexgen-slider-css" href="{{ asset('css/slider.min.css') }}">
     <link rel="stylesheet" id="nexgen-custom-css" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" id="nexgen-icons-css" href="{{ asset('css/icons.min.css') }}">
@@ -53,98 +52,32 @@
     <link rel="stylesheet" href="{{ asset('css/wc-blocks.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('css/solid.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" id="contact-form-7-css" href="{{ asset('css/styles.css') }}" type="text/css"
-        media="all">
-
-
-    {{-- css internal --}}
+    <link rel="stylesheet" id="contact-form-7-css" href="{{ asset('css/styles.css') }}" type="text/css" media="all">
 
     <style>
+        /* ── Signature / misc ── */
         .signature-name {
             font-family: 'Great Vibes', cursive;
-            /* signature style font */
             font-size: 40px;
             color: #2c2c2c;
             margin: 0;
             display: inline-block;
         }
-
         .designation {
             font-size: 18px;
             color: #7a8a99;
             margin-left: 10px;
             font-weight: 500;
         }
+        .woocommerce-product-gallery { opacity: 1 !important; }
 
-        
-
-        
-
-        
-
-        
-        
-        
-
-        .woocommerce-product-gallery {
-            opacity: 1 !important;
-        }
-
-        
-
-        
-
-        
-
-        
-        
-
-        
-
-        .lg-outer .lg-has-vimeo .lg-video-play {
-            --wpr-bg-ac5a1111-be1e-473f-a8b8-f4b8f89c0d9a: url('https://nexgen.codings.dev/wp-content/themes/nexgen/assets/images/favicon.ico');
-        }
-
-        .lg-outer .lg-has-vimeo:hover .lg-video-play {
-            --wpr-bg-2b1935f9-7899-44cd-bb99-92397318449d: url('https://nexgen.codings.dev/wp-content/themes/nexgen/assets/images/favicon.ico');
-        }
-
-        .lg-outer .lg-has-html5 .lg-video-play {
-            --wpr-bg-4979c50d-8ee1-4d52-bf42-736844bee139: url('https://nexgen.codings.dev/wp-content/themes/nexgen/assets/images/favicon.ico');
-        }
-
-        .lg-outer .lg-has-youtube .lg-video-play {
-            --wpr-bg-04c3017e-2733-496d-947f-6c1d071295fe: url('https://nexgen.codings.dev/wp-content/themes/nexgen/assets/images/favicon.ico');
-        }
-
-        .lg-outer .lg-has-youtube:hover .lg-video-play {
-            --wpr-bg-2bfc4610-671e-4c67-bac1-c469416166b1: url('https://nexgen.codings.dev/wp-content/themes/nexgen/assets/images/favicon.ico');
-        }
-
-        .lg-outer .lg-item {
-            --wpr-bg-ac59fbfd-7e3d-4bdd-bc1d-18e6e3fd06e7: url('https://nexgen.codings.dev/wp-content/themes/nexgen/assets/images/loading.gif');
-        }
-
-        .elementor-6480 .elementor-element.elementor-element-1f66739:not(.elementor-motion-effects-element-type-background),
-        .elementor-6480 .elementor-element.elementor-element-1f66739>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-            --wpr-bg-fc7df5e7-060c-480e-9c0f-cf0f70cb9210: url('https://nexgen.codings.dev/wp-content/uploads/2021/03/bg-wide.jpg');
-        }
-
-        .rll-youtube-player .play {
-            --wpr-bg-98acf99b-b2df-4ab0-b1a8-b576963da27c: url('https://nexgen.codings.dev/wp-content/plugins/wp-rocket/assets/img/youtube.png');
-        }
-
-
-
-        /* Progress Block */
+        /* ── Progress circle ── */
         .progress-block {
             display: flex;
             align-items: center;
             gap: 20px;
             padding: 4px;
         }
-
-        /* Circle Progress */
         .circle {
             width: 120px;
             height: 120px;
@@ -155,8 +88,6 @@
             justify-content: center;
             position: relative;
         }
-
-        /* Inner white circle */
         .circle::before {
             content: "";
             position: absolute;
@@ -165,31 +96,24 @@
             background: #000000;
             border-radius: 50%;
         }
-
-        /* Percentage text */
         .circle span {
             position: relative;
             font-size: 22px;
             font-weight: 600;
             color: #FAF3E0;
         }
-
-        /* Text beside */
         .progress-block h3 {
             font-size: 20px;
             color: #ffffff;
             line-height: 1.4;
             text-align: left;
         }
-
-
         .signature-box h2 {
             font-family: 'Brush Script MT', cursive;
             font-size: 36px;
             color: #ffffff;
             font-weight: 400;
         }
-
         .signature-box span {
             font-family: Arial, sans-serif;
             font-size: 18px;
@@ -197,209 +121,211 @@
             margin-left: 10px;
         }
 
-        body {
-            font-family: Arial;
-        }
-
-        .testimonial-style1-area {
-            padding: 60px 0;
-        }
-
+        /* ── Testimonial carousel ── */
+        body { font-family: Arial; }
+        .testimonial-style1-area { padding: 60px 0; }
         .single-testimonial-style1 {
             background: #f5f5f5;
             padding: 20px;
             border-radius: 10px;
             margin: 10px;
         }
-
         .bottom-box {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 15px;
         }
+        .client-img img { width: 60px; height: 60px; }
 
-        .client-img img {
-            width: 60px;
-            height: 60px; 
+        /* ── Hero overlay ── */
+        .hero { position: relative; }
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
         }
-        .signature-name {
-            font-family: 'Great Vibes', cursive; /* signature style font */
-            font-size: 40px;
-            color: #2c2c2c;
-            margin: 0;
-            display: inline-block;
+        .hero .slide-content {
+            position: relative;
+            z-index: 2;
         }
 
-        .designation {
-            font-size: 18px;
-            color: #7a8a99;
-            margin-left: 10px;
-            font-weight: 500;
-        } 
+        /* ── Section 3 background ── only applies on home page Values & Culture */
+        .elementor-page-6480 #about-3.section-3 {
+            background-color: #111117;
+            background-image: url('images/bg-1.jpg');
+        }
 
-        
-        .hero {
-                    position: relative;
-                }
+        /* ================================================================
+           AOS MOBILE FIX
+           The AOS library sets data-aos elements to opacity:0 / translated
+           on init. On mobile it never triggers because of its default
+           disable:mobile setting. We override this by:
+           1. Re-initialising AOS with disable:false (in JS below)
+           2. Providing CSS keyframe animations as a pure-CSS fallback
+              using IntersectionObserver via the .aos-animate class
+        ================================================================ */
 
-                .hero::before {
-                    content: "";
-                    position: absolute;
-                    inset: 0;
-                    background: rgba(0, 0, 0, 0.7); /* black overlay */
-                    z-index: 1;
-                }
+        /* Base state — hidden before animate class is added */
+        [data-aos] {
+            transition-property: opacity, transform;
+        }
 
-                .hero .slide-content {
-                    position: relative;
-                    z-index: 2;
-                }
-    </style>
+        /* ── Fade up ── */
+        [data-aos="fade-up"] {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        [data-aos="fade-up"].aos-animate {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
 
+        /* ── Fade down ── */
+        [data-aos="fade-down"] {
+            opacity: 0;
+            transform: translateY(-40px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        [data-aos="fade-down"].aos-animate {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
 
-    {{-- css internal  --}}
-    {{-- Boss internal css  --}}
-        <style>
-                 
-                section.section-3  { background-color: #111117;  background-image: images/bg-1.jpg; }
-                </style>
-                <!-- Hero --> 
+        /* ── Zoom in ── */
+        [data-aos="zoom-in"] {
+            opacity: 0;
+            transform: scale(0.85);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        [data-aos="zoom-in"].aos-animate {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
 
-                <style>
-                @media (max-width: 991px){
-        
-                    /* ── CORE FIX: prevent horizontal overflow and white gap ── */
-                    html, body {
-                        overflow-x: hidden !important;
-                        width: 100% !important;
-                        max-width: 100% !important;
-                    }
-        
-                    /* Force slider to full width, hide overflow */
-                    #slider {
-                        background: #000;
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        overflow: hidden !important;
-                    }
-        
-                    /* KEY FIX: swiper-slide was sitting in flex row with parallax div
-                    This makes it block so nothing sits beside the content */
-                    #slider .swiper-container,
-                    #slider .swiper-wrapper,
-                    #slider .swiper-slide {
-                        display: contents !important;
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        overflow: hidden !important;
-                    }
-        
-                    /* Hide the parallax background image div completely —
-                    this is the element causing the white column on the right */
-                    #slider .parallax-y-bg {
-                        display: none !important;
-                        width: 0 !important;
-                        height: 0 !important;
-                        position: absolute !important;
-                        visibility: hidden !important;
-                    }
-        
-                    /* Slide content: block layout, full width */
-                    #slider .slide-content {
-                        display: block !important;
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        padding-top: 80px;
-                        padding-bottom: 40px;
-                        min-height: auto;
-                        background-color: #000;
-                        overflow: hidden !important;
-                    }
-        
-                    /* All columns inside slide take full width */
-                    #slider .slide-content .col-12 {
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        flex: 0 0 100% !important;
-                        padding-left: 15px !important;
-                        padding-right: 15px !important;
-                    }
-        
-                    /* Content .right div — full width, black background */
-                    #slider .right {
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        background: #000;
-                        padding: 0 !important;
-                    }
-        
-                    /* Background image on title area only */
-                    .effect-static-text {
-                        background-image: url('images/bg-9.jpeg');
-                        background-size: cover;
-                        background-position: center top;
-                        background-repeat: no-repeat;
-                        padding: 100px 10px 50px;
-                        border-radius: 0;
-                        color: #fff;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-end;
-                        text-align: right;
-                    }
-        
-                    /* Heading */
-                    #slider h1.title {
-                        font-size: 35px;
-                        line-height: 0.5;
-                        color: #fff;
-                        margin-bottom: 30px;
-                    }
-        
-                    /* Inputs */
-                    #slider .form-control {
-                        background: #161616 !important;
-                        border: 1px solid #222 !important;
-                        color: #fff !important;
-                    }
-        
-                    #slider .form-control::placeholder {
-                        color: #8f8f8f;
-                    }
-        
-                    .slider-h-auto.no-slider .inner {
-                        padding-top: 0px;
-                    }
+        /* ── Zoom out up ── */
+        [data-aos="zoom-out-up"] {
+            opacity: 0;
+            transform: scale(1.1) translateY(-20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        [data-aos="zoom-out-up"].aos-animate {
+            opacity: 1 !important;
+            transform: scale(1) translateY(0) !important;
+        }
 
-                    [data-aos]{
-                        opacity: 1 !important;
-                        transform: none !important;
-                        transition: none !important;
-                    }
-                }
-        
-            @media (max-width: 767px) {
-        
-                /* Hide left topbar on mobile */
-                .navbar.top .left {
-                    display: none !important;
-                }
-        
-                /* Hide social icons in topbar */
-                .navbar.top .right .nav-item:nth-child(3),
-                .navbar.top .right .nav-item:nth-child(4),
-                .navbar.top .right .nav-item:nth-child(5) {
-                    display: none !important;
-                }
-                .navbar.top .navbar-nav .nav-item a:not(.btn) {
-                    padding-right: 0;
-                    padding-left: 0;
-                } 
+        /* ── Slide up ── */
+        [data-aos="slide-up"] {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        [data-aos="slide-up"].aos-animate {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* ── Respect aos-delay attributes via inline style (handled in JS) ── */
+
+        /* ================================================================
+           MOBILE AOS — animations enabled with safety net
+           Mobile animations work via the IntersectionObserver in JS below.
+           If an element somehow gets stuck at opacity 0 longer than 3s,
+           the safety timeout in JS reveals it.
+        ================================================================ */
+        @@media (max-width: 991px) {
+            /* Force all data-aos elements visible on mobile.
+               Animation effects via transform still work, but opacity
+               never goes to 0 so content is always visible. */
+            [data-aos] {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transition-duration: 0.5s !important;
             }
-         </style>
-    {{-- Boss internal css  --}}
+            [data-aos="fade-up"],
+            [data-aos="fade-down"],
+            [data-aos="fade-in"],
+            [data-aos="fade-left"],
+            [data-aos="fade-right"],
+            [data-aos="zoom-in"],
+            [data-aos="zoom-out"],
+            [data-aos="zoom-out-up"],
+            [data-aos="slide-up"],
+            [data-aos="slide-down"] {
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            [data-aos].aos-animate {
+                opacity: 1 !important;
+            }
 
+            /* ── About Style 1 Area — hide decorative shapes on mobile only ── */
+            .about-style1-area .shape-1,
+            .about-style1-area .shape-2 {
+                display: none !important;
+            }
+            /* Ensure image displays at full container width */
+            .about-style1-area .about-style1__image .inner img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+            /* Content column padding on mobile */
+            .about-style1-area .about-style1__content {
+                padding-top: 30px !important;
+            }
+
+            /* ── WOW.js animations — force visible on mobile ──
+               WOW.js never initialises on this site, so elements with
+               .wow stay invisible forever. Force them visible on mobile.
+            ── */
+            .wow,
+            .wow.fadeInRight,
+            .wow.fadeInLeft,
+            .wow.fadeInUp,
+            .wow.fadeInDown,
+            .wow.fadeIn,
+            .wow.zoomIn,
+            .wow.slideInUp,
+            .wow.slideInDown {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+                animation: none !important;
+                animation-name: none !important;
+            }
+            /* Working process cards specifically */
+            .working-process__single,
+            .working-process__single * {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+            }
+        }
+
+
+        /* ================================================================
+           MOBILE LAYOUT FIXES  (≤ 991px)
+        ================================================================ */
+        @@media (max-width: 991px) {
+            /* Layout rules handled in end-of-body style block */
+            /* DO NOT disable AOS here anymore — handled by JS below */
+        }
+
+        @@media (max-width: 767px) {
+            .navbar.top .left { display: none !important; }
+            .navbar.top .right .nav-item:nth-child(3),
+            .navbar.top .right .nav-item:nth-child(4),
+            .navbar.top .right .nav-item:nth-child(5) { display: none !important; }
+            .navbar.top .navbar-nav .nav-item a:not(.btn) {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    </style>
 
 </head>
 
@@ -408,66 +334,36 @@
     {{-- HEADER --}}
     <header id="header" class="has-navbar-top has-navbar-bottom">
 
-
         <!-- Top Bar -->
         <nav class="navbar navbar-expand top">
             <div class="container header">
-
-
-                <!-- Top Bar [left] -->
-
                 <ul class="navbar-nav left">
-
-
                     <li class="nav-item">
-
-                        <a href="#" target="_self" class="nav-link m-0"><i
-                                class="fas fa-clock text-after"></i>Open Hours: Mon - Sat - 9:00 - 18:00</a>
+                        <a href="#" target="_self" class="nav-link m-0">
+                            <i class="fas fa-clock text-after"></i>Open Hours: Sun – Thu, 9:00 – 18:00
+                        </a>
                     </li>
-
-
                 </ul>
-
-
-                <!-- Nav holder -->
                 <div class="ml-auto"></div>
-
-                <!-- Top Bar [right] -->
-
                 <ul class="navbar-nav right">
-
-
                     <li class="nav-item">
-
-                        <a href="#" target="_self" class="nav-link m-0"><i
-                                class="fas fa-phone-alt text-after"></i>+971 585015666</a>
+                        <a href="tel:+971585015666" target="_self" class="nav-link m-0">
+                            <i class="fas fa-phone-alt text-after"></i>+971 585 015 666
+                        </a>
                     </li>
-
-
                     <li class="nav-item">
-
-                        <a href="#" target="_self" class="nav-link m-0"><i
-                                class="fas fa-envelope text-after"></i>dubai@oceanoapex.com</a>
+                        <a href="mailto:dubai@oceanoapex.com" target="_self" class="nav-link m-0">
+                            <i class="fas fa-envelope text-after"></i>dubai@oceanoapex.com
+                        </a>
                     </li>
-
-
                     <li class="nav-item">
-
-                        <a href="#" target="_self" class="nav-link m-0"><i
-                                class="fab fa-facebook-f m-0"></i></a>
+                        <a href="#" target="_self" class="nav-link m-0"><i class="fab fa-facebook-f m-0"></i></a>
                     </li>
-
-
                     <li class="nav-item">
-
                         <a href="#" target="_self" class="nav-link m-0"><i class="fab fa-twitter m-0"></i></a>
                     </li>
-
-
                     <li class="nav-item">
-
-                        <a href="#" target="_self" class="nav-link m-0"><i
-                                class="fab fa-linkedin-in m-0"></i></a>
+                        <a href="#" target="_self" class="nav-link m-0"><i class="fab fa-linkedin-in m-0"></i></a>
                     </li>
                     <li class="nav-item dropdown language-dropdown">
                         <select onchange="changeLanguage(this.value)" class="form-control lang-select">
@@ -476,51 +372,23 @@
                         </select>
                     </li>
                 </ul>
-
-
             </div>
         </nav>
-
-
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand navbar-fixed sub" style="position: absolute;">
             <div class="container header">
-
-
-                <!-- Navbar [left] -->
-
                 <a href="{{ route('home') }}" class="navbar-brand">
-                    <img width="286" height="100" src="{{ asset('images/Oceano-Apex-Logo.png') }}"
-                        alt="Oceano Apex" class="d-none d-sm-block desktop-logo"><img width="286" height="100"
-                        src="{{ asset('images/Oceano-Apex-Logo.png') }}" alt="Oceano Apex"
-                        class="d-block d-sm-none responsive-logo"> </a>
-
-
-                <!-- Nav holder -->
+                    <img width="286" height="100" src="{{ asset('images/Oceano-Apex-Logo.png') }}" alt="Oceano Apex" class="d-none d-sm-block desktop-logo">
+                    <img width="286" height="100" src="{{ asset('images/Oceano-Apex-Logo.png') }}" alt="Oceano Apex" class="d-block d-sm-none responsive-logo">
+                </a>
                 <div class="ml-auto"></div>
-
-                <!-- Navbar [right] -->
-
-
                 <ul id="menu-nexgen-menu-1" class="navbar-nav items right">
-
-
-                    <li id="menu-item-10573"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10573 nav-item"><a
-                            href="{{ route('home') }}" class="nav-link">HOME</a></li>
-
-                    <li id="menu-item-10573"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10573 nav-item"><a
-                            href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
-                    <li id="menu-item-10573"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10573 nav-item"><a
-                            href="#" class="nav-link">SERVICES</a></li>
-                    <li id="menu-item-10573"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10573 nav-item"><a
-                            href="#" class="nav-link">BLOG</a></li>
+                    <li class="menu-item nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
+                    <li class="menu-item nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
+                    <li class="menu-item nav-item"><a href="#" class="nav-link">SERVICES</a></li>
+                    <li class="menu-item nav-item"><a href="#" class="nav-link">BLOG</a></li>
                 </ul>
-
                 <ul class="navbar-nav toggle">
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
@@ -528,536 +396,712 @@
                         </a>
                     </li>
                 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
                 <ul class="navbar-nav action d-md-block d-sm-block d-none">
                     <li class="nav-item">
-
                         <a href="{{ route('contact') }}" target="_blank" class="btn primary-button">CONTACT</a>
                     </li>
                 </ul>
-
-
             </div>
         </nav>
-
 
     </header>
 
     {{-- PAGE CONTENT --}}
-
     @yield('content')
-<!-- Google Translate -->
- 
-  {{-- FOOTER --}}
+
+    {{-- FOOTER --}}
     <footer data-wpr-lazyrender="1" id="footer" class="footer">
 
-
-        <!-- Main -->
         <section class="footer main offers">
             <div class="container">
                 <div class="row items">
 
-
                     <div class="col-12 col-md-6 col-lg-3 item">
-
-
                         <div class="content-block brand">
-                            <a href="" class="navbar-brand">
-                                <img width="286" height="100" src="{{ asset('images/Oceano-Apex-Logo.png') }}"
-                                    alt="Oceano Apex" class="d-none d-sm-block desktop-logo"><img width="286"
-                                    height="100" src="{{ asset('images/Oceano-Apex-Logo.png') }}"
-                                    alt="Oceano Apex" class="d-block d-sm-none responsive-logo"> </a>
+                            <a href="{{ route('home') }}" class="navbar-brand">
+                                <img width="286" height="100" src="{{ asset('images/Oceano-Apex-Logo.png') }}" alt="Oceano Apex" class="d-none d-sm-block desktop-logo">
+                                <img width="286" height="100" src="{{ asset('images/Oceano-Apex-Logo.png') }}" alt="Oceano Apex" class="d-block d-sm-none responsive-logo">
+                            </a>
                         </div>
-
-
                         <div class="content-block paragraph">
-                            <p>Oceano Apex is a trusted<br>
-                                financia Advisory firm and<br>
-                                growing wealth management <br>
-                                company providing professional<br>
-                                investment management<br>
-                                services</p>
+                            <p>Oceano Apex is a boutique wealth management firm offering personalised financial solutions tailored to each client's unique goals — guided by integrity, innovation, and a focus on long-term growth.</p>
                         </div>
-
-
-
-
                         <ul class="navbar-nav action content-block">
                             <li class="nav-item">
-
-                                <a href="#" target="_blank" class="btn secondary-button">GET IN TOUCH</a>
+                                <a href="{{ route('contact') }}" class="btn secondary-button">GET IN TOUCH</a>
                             </li>
                         </ul>
-
                     </div>
-
 
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <div class="card">
                             <h4>About</h4>
-                            <ul id="menu-nexgen-footer-1" class="footer-link-list">
-                                <li id="menu-item-10684"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10684"><a
-                                        href="{{ route('about') }}">About us</a></li>
-                                <li id="menu-item-10684"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10684"><a
-                                        href="{{ route('contact') }}">Contact </a></li>
-                                <li id="menu-item-10685"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10685"><a
-                                        href="#">Blog </a></li>
+                            <ul class="footer-link-list">
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
                             </ul>
                         </div>
                     </div>
-
 
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <div class="card">
                             <h4>Services</h4>
-                            <ul id="menu-nexgen-footer-2" class="footer-link-list">
-                                <li id="menu-item-14051"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14051"><a
-                                        href="{{ route('services-hedgefunds') }}">Hedge Funds</a></li>
-                                <li id="menu-item-14052"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14052"><a
-                                        href="{{ route('services-treasuryfunds') }}">Treasury Funds </a></li>
+                            <ul class="footer-link-list">
+                                <li><a href="{{ route('services-hedgefunds') }}">Hedge Funds</a></li>
+                                <li><a href="{{ route('services-treasuryfunds') }}">Treasury Funds</a></li>
                             </ul>
                         </div>
                     </div>
-
 
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <div class="card">
                             <h4>Support</h4>
-                            <ul id="menu-nexgen-footer-3" class="footer-link-list">
-                                <li id="menu-item-14056"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14056"><a
-                                        href="#">Terms of Use</a></li>
-                                <li id="menu-item-14057"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14057"><a
-                                        href="#">Privacy Policy</a></li>
+                            <ul class="footer-link-list">
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
 
-
                 </div>
             </div>
         </section>
 
-
-
-        <!-- Bottom Bar -->
         <section class="bottom-bar" style="background-color: #000;">
             <div class="container">
                 <div class="row">
-
-
-
                     <div class="col-12 col-md-6 p-0 text-left">
-
-                        <!-- Bottom Bar [left] -->
-
                         <ul class="navbar-nav text-left text-lg-left">
-
-
                             <li class="nav-item d-block d-md-inline-flex">
-
-                                <a href="https://eoan.co.in/" target="_blank" class="nav-link">© 2026 - All rights
-                                    reserved. Oceano Apex is maintained by Eoan.</a>
+                                <a href="https://eoan.co.in/" target="_blank" class="nav-link">
+                                    © 2026 - All rights reserved. Oceano Apex is maintained by Eoan.
+                                </a>
                             </li>
-
-
                         </ul>
-
-
                     </div>
                     <div class="col-12 col-md-6 p-0 text-left text-lg-right">
-
-                        <!-- Bottom Bar [right] -->
-
                         <ul class="navbar-nav text-left text-lg-right">
-
-
-                            <li class="nav-item">
-
-                                <a href="#" target="_self" class="nav-link"><i
-                                        class="fab fa-facebook-f m-0"></i></a>
-                            </li>
-
-
-                            <li class="nav-item">
-
-                                <a href="#" target="_self" class="nav-link"><i
-                                        class="fab fa-twitter m-0"></i></a>
-                            </li>
-
-
-                            <li class="nav-item">
-
-                                <a href="#" target="_self" class="nav-link"><i
-                                        class="fab fa-linkedin-in m-0"></i></a>
-                            </li>
-
-
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-facebook-f m-0"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter m-0"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin-in m-0"></i></a></li>
                         </ul>
-
-
                     </div>
                 </div>
             </div>
         </section>
 
-
     </footer>
 
-
-
+    <!-- ── JS ── -->
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-
     <script type="text/javascript" src="{{ asset('js/jquery-migrate.min.js') }}"></script>
-
     <script type="text/javascript" src="{{ asset('js/jquery.blockUI.min.js') }}" defer></script>
     <script src="{{ asset('js/add-to-cart.min.js') }}" defer></script>
-
     <script src="{{ asset('js/js.cookie.min.js') }}" defer></script>
-
     <script src="{{ asset('js/woocommerce.min.js') }}" defer></script>
-
     <script src="{{ asset('js/wp-emoji-release.min.js') }}" defer></script>
-
-
     <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
-
     <script src="{{ asset('js/jquery.inview.min.js') }}"></script>
-
     <script src="{{ asset('js/popper.min.js') }}"></script>
-
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-
     <script src="{{ asset('js/ponyfill.min.js') }}"></script>
-
     <script src="{{ asset('js/slider.min.js') }}"></script>
-
     <script src="{{ asset('js/animation.min.js') }}"></script>
-
     <script src="{{ asset('js/progress-radial.min.js') }}"></script>
-
     <script src="{{ asset('js/bricklayer.min.js') }}"></script>
-
     <script src="{{ asset('js/gallery.min.js') }}"></script>
-
     <script src="{{ asset('js/shuffle.min.js') }}"></script>
-
     <script src="{{ asset('js/particles.min.js') }}"></script>
-
     <script src="{{ asset('js/cookie-notice.min.js') }}"></script>
-
     <script async src="{{ asset('js/lazyload.min.js') }}"></script>
-
     <script src="{{ asset('js/frontend.min.js') }}"></script>
-
     <script src="{{ asset('js/cart-fragments.min.js') }}" defer></script>
-
     <script src="{{ asset('js/webpack.runtime.min.js') }}"></script>
-
     <script src="{{ asset('js/frontend-modules.min.js') }}"></script>
-
     <script src="{{ asset('js/core.min.js') }}"></script>
-
     <script src="{{ asset('js/index_1.js') }}"></script>
-
     <script src="{{ asset('js/main.js') }}"></script>
-
     <script src="{{ asset('js/elementor.js') }}"></script>
-
     <script async fetchpriority="low" src="{{ asset('js/comment-reply.min.js') }}"></script>
-
     <script src="{{ asset('js/sourcebuster.min.js') }}"></script>
-
     <script src="{{ asset('js/order-attribution.min.js') }}"></script>
-
     <script src="{{ asset('js/hooks.min.js') }}"></script>
-
     <script src="{{ asset('js/i18n.min.js') }}"></script>
-
     <script src="{{ asset('js/index.js') }}"></script>
 
-    <!-- jQuery -->
+    <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script>
-        $(document).ready(function() {
-            $('.testimonial-carousel').owlCarousel({
-                loop: true,
-                margin: 30,
-                autoHeight: true,
-                nav: false,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                smartSpeed: 600,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 1
-                    },
-                    992: {
-                        items: 2
+        /* ── Owl Carousel init (home page testimonials) ── */
+        $(document).ready(function () {
+            if ($('.testimonial-carousel').length) {
+                $('.testimonial-carousel').owlCarousel({
+                    loop: true,
+                    margin: 30,
+                    autoHeight: true,
+                    nav: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    smartSpeed: 600,
+                    responsive: {
+                        0:   { items: 1 },
+                        768: { items: 1 },
+                        992: { items: 2 }
                     }
-                }
-            });
-        });
-    </script>
-    <script>
-        document.querySelectorAll('.circle').forEach(circle => {
-            let percent = circle.getAttribute('data-percent');
-            circle.style.setProperty('--percent', percent);
-        });
-    </script>
-    <script>
-        jQuery(function($) {
-
-            $('.card-pulse-icon').each(function() {
-
-                let card = $(this);
-
-                card.hover(function() {
-
-                    let color = card.find('.pulse-icon').data('color');
-
-                    $(':root').css('--pulse-color', color);
-                })
-            })
-        })
-    </script>
-    <script>
-        $(document).ready(function(){
-            $('.testimonial-carousel').owlCarousel({
-                loop: true,
-                margin: 30,
-                autoHeight: true,
-                nav: false,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                smartSpeed: 600,
-                responsive:{
-                    0:{ items:1 },
-                    768:{ items:1 },
-                    992:{ items:2 }
-                }
-            });
-        });
-    </script>
-
-
-    <!-- Search Modal -->
-<div id="search" class="p-0 modal modal-search fade" role="dialog">
-    <div class="modal-dialog modal-dialog-slideout" role="document">
-        <div class="modal-content full">
-            <div class="modal-header" data-dismiss="modal">
-                <i class="icon-close fas fa-arrow-left"></i>
-            </div>
-
-            <div class="modal-body">
-                <form class="row">
-                    <div class="col-12 p-0 align-self-center">
-
-                        <div class="row">
-                            <div class="col-12 p-0">
-                                <h2>What are you looking for?</h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 p-0 input-group">
-                                <input type="search" placeholder="Enter Keywords">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 p-0 input-group align-self-center">
-                                <button class="btn primary-button">SEARCH</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Mobile Menu Modal -->
-<div id="menu" class="p-0 modal modal-menu fade" role="dialog">
-    <div class="modal-dialog modal-dialog-slideout" role="document">
-        <div class="modal-content full">
-
-            <div class="modal-header" data-dismiss="modal">
-                <i class="icon-close fas fa-arrow-left"></i>
-            </div>
-
-            <div class="menu modal-body">
-
-                <ul class="navbar-nav items">
-                    <li class="nav-item">
-                        <a href="{{ route('home') }}" class="nav-link">HOME</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="{{ route('about') }}" class="nav-link">ABOUT</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="{{ route('services-hedgefunds') }}" class="nav-link">
-                            HEDGE FUNDS
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="{{ route('services-treasuryfunds') }}" class="nav-link">
-                            TREASURY FUNDS
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="{{ route('contact') }}" class="nav-link">CONTACT</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Cart Modal -->
-<div id="cart" class="p-0 modal modal-cart fade" role="dialog">
-    <div class="modal-dialog modal-dialog-slideout" role="document">
-        <div class="modal-content full">
-
-            <div class="modal-header" data-dismiss="modal">
-                <i class="icon-close fas fa-arrow-left"></i>
-            </div>
-
-            <div class="modal-body">
-                <div class="widget woocommerce widget_shopping_cart">
-                    <div class="widget_shopping_cart_content"></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- Google Translate -->
-<!-- Google Translate -->
-
-<div id="google_translate_element" style="display:none"></div>
-
-<style>
-    body {
-        top: 0 !important;
-        position: static !important;
-        min-height: auto !important;
-    }
-
-    html {
-        margin-top: 0 !important;
-    }
-
-    /* Hide top translate banner */
-    .goog-te-banner-frame.skiptranslate {
-        display: none !important;
-    }
-
-    iframe.skiptranslate {
-        display: none !important;
-    }
-
-    /* Hide translate tooltip */
-    .goog-tooltip,
-    .goog-tooltip:hover {
-        display: none !important;
-    }
-
-    /* Remove text highlight */
-    .goog-text-highlight {
-        background: transparent !important;
-        box-shadow: none !important;
-    }
-
-    /* Hide Google translate widget */
-    #google_translate_element {
-        display: none !important;
-    }
-
-    /* Hide translation popup / feedback */
-    .VIpgJd-ZVi9od-ORHb-OEVmcd,
-    .VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
-    .VIpgJd-yAWNEb-L7lbkb,
-    .goog-te-balloon-frame,
-    div[style*="translate.googleapis.com"] {
-        display: none !important;
-        visibility: hidden !important;
-    }
-</style>
-
-<script>
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'en,ar,fr,de,hi',
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
-
-    function changeLanguage(lang) {
-
-        var interval = setInterval(function () {
-
-            var select = document.querySelector(".goog-te-combo");
-
-            if (select) {
-                select.value = lang;
-                select.dispatchEvent(new Event("change"));
-
-                document.body.style.top = "0px";
-                clearInterval(interval);
+                });
             }
+        });
 
-        }, 300);
-    }
+        /* ── Swiper mid-slider (testimonials carousel) ──
+           Force reinit with correct mobile settings and fast autoplay.
+        ── */
+        function initMidSliders() {
+            if (typeof Swiper === 'undefined') {
+                /* Swiper not loaded yet — retry in 300ms */
+                setTimeout(initMidSliders, 300);
+                return;
+            }
+            document.querySelectorAll('.swiper-container.mid-slider').forEach(function (el) {
+                /* Destroy existing instance if any */
+                if (el.swiper) { el.swiper.destroy(true, true); }
 
-    setInterval(function () {                
+                var perView = parseInt(el.getAttribute('data-perview') || '3', 10);
 
-        document.body.style.top = "0px";
-
-        let frame = document.querySelector(".goog-te-banner-frame");
-
-        if (frame) {
-            frame.remove();
+                new Swiper(el, {
+                    loop: true,
+                    centeredSlides: true,       /* keeps active slide centred on mobile */
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    speed: 500,                 /* slide transition speed ms */
+                    autoplay: {
+                        delay: 1500,            /* 1.5 seconds as requested */
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true
+                    },
+                    pagination: {
+                        el: el.querySelector('.swiper-pagination, .carousel-pagination'),
+                        clickable: true
+                    },
+                    navigation: {
+                        nextEl: el.querySelector('.swiper-button-next, .carousel-nav-next'),
+                        prevEl: el.querySelector('.swiper-button-prev, .carousel-nav-prev')
+                    },
+                    breakpoints: {
+                        768: { slidesPerView: 2, spaceBetween: 24, centeredSlides: false },
+                        992: { slidesPerView: perView, spaceBetween: 30, centeredSlides: false }
+                    }
+                });
+            });
         }
 
-    }, 500);
-</script>
+        /* Run after DOM ready AND after full page load to catch late-rendered sliders */
+        document.addEventListener('DOMContentLoaded', initMidSliders);
+        window.addEventListener('load', initMidSliders);
 
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        /* ── Progress circles ── */
+        document.querySelectorAll('.circle').forEach(function (circle) {
+            circle.style.setProperty('--percent', circle.getAttribute('data-percent'));
+        });
+
+        /* ── Card pulse colour ── */
+        jQuery(function ($) {
+            $('.card-pulse-icon').each(function () {
+                var card = $(this);
+                card.hover(function () {
+                    var color = card.find('.pulse-icon').data('color');
+                    $(':root').css('--pulse-color', color);
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* ================================================================
+           VALUES & CULTURE SECTION (#about-3)
+           Problem: background image + dark #21333e text = unreadable on mobile
+           Fix: dark overlay behind content, all text forced white
+        ================================================================ */
+        #about-3 {
+            position: relative;
+        }
+        /* Dark overlay so background image never competes with text */
+        #about-3::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.72);
+            z-index: 0;
+            pointer-events: none;
+        }
+        /* Lift container above overlay */
+        #about-3 .container {
+            position: relative;
+            z-index: 1;
+        }
+        /* Force all text white inside this section only */
+        #about-3 h2,
+        #about-3 h4,
+        #about-3 p,
+        #about-3 span.pre-title,
+        #about-3 .pre-title,
+        #about-3 .items h4,
+        #about-3 .items p,
+        #about-3 .intro p,
+        #about-3 i {
+            color: #fff !important;
+        }
+
+        /* ── Swiper carousel mobile: centred single slide ── */
+        .section-4 .swiper-container.mid-slider {
+            overflow: hidden !important;
+            padding-bottom: 40px !important;
+        }
+        /* On mobile show one full-width card centred */
+        @@media (max-width: 767px) {
+            .section-4 .swiper-container.mid-slider .swiper-slide {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: stretch !important;
+                width: 100% !important;
+            }
+            .section-4 .swiper-container.mid-slider .swiper-slide .card,
+            .section-4 .swiper-container.mid-slider .swiper-slide .row.card {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin: 0 auto !important;
+            }
+            /* Pagination dots centred */
+            .section-4 .swiper-pagination,
+            .section-4 .carousel-pagination {
+                text-align: center !important;
+                position: relative !important;
+                margin-top: 16px !important;
+            }
+        }
+        .section-4 .swiper-slide.item {
+            height: auto !important;
+        }
+        .section-4 .card {
+            height: 100% !important;
+            min-height: auto !important;
+        }
+    </style>
+
+    <!-- ================================================================
+         AOS MOBILE FIX — global, covers every page
+         Problem: AOS disables itself on mobile by default (disable:'mobile')
+         Fix:
+           1. Re-init AOS with disable:false so it works on all screen sizes
+           2. Apply aos-delay values as actual CSS transition-delays
+           3. Fallback IntersectionObserver for any elements AOS misses
+    ================================================================ -->
+    <script>
+        (function () {
+
+            /* ── 1. Re-initialise AOS with mobile enabled ── */
+            function initAOS() {
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({
+                        disable: false,          // enable on ALL devices including mobile
+                        startEvent: 'DOMContentLoaded',
+                        initClassName: 'aos-init',
+                        animatedClassName: 'aos-animate',
+                        useClassNames: false,
+                        disableMutationObserver: false,
+                        debounceDelay: 50,
+                        throttleDelay: 99,
+                        offset: 80,              // px from bottom of viewport to trigger
+                        delay: 0,
+                        duration: 600,
+                        easing: 'ease',
+                        once: false,
+                        mirror: false,
+                        anchorPlacement: 'top-bottom'
+                    });
+                }
+            }
+
+            /* ── 2. Apply data-aos-delay as real CSS transition-delay ── */
+            function applyDelays() {
+                document.querySelectorAll('[data-aos-delay]').forEach(function (el) {
+                    var delay = el.getAttribute('data-aos-delay');
+                    if (delay) {
+                        el.style.transitionDelay = (parseInt(delay, 10) / 1000) + 's';
+                    }
+                });
+            }
+
+            /* ── 3. IntersectionObserver fallback ──
+               Catches elements that AOS missed (e.g. already in viewport on load,
+               or on very short pages on mobile).
+            ── */
+            function setupFallbackObserver() {
+                if (!('IntersectionObserver' in window)) {
+                    /* Very old browser — just show everything */
+                    document.querySelectorAll('[data-aos]').forEach(function (el) {
+                        el.classList.add('aos-animate');
+                    });
+                    return;
+                }
+
+                /* Larger trigger zone on mobile so animations fire reliably */
+                var isMobile = window.innerWidth <= 991;
+                var threshold = isMobile ? 0.05 : 0.1;
+                var rootMargin = isMobile ? '0px 0px 100px 0px' : '0px 0px -60px 0px';
+
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('aos-animate');
+                        }
+                    });
+                }, {
+                    threshold: threshold,
+                    rootMargin: rootMargin
+                });
+
+                document.querySelectorAll('[data-aos]').forEach(function (el) {
+                    observer.observe(el);
+                });
+
+                /* ── SAFETY NET ──
+                   After 3 seconds, force-show any element still stuck.
+                   This guarantees content is never permanently invisible
+                   even if scroll detection fails for any reason.
+                ── */
+                setTimeout(function () {
+                    document.querySelectorAll('[data-aos]:not(.aos-animate)').forEach(function (el) {
+                        var rect = el.getBoundingClientRect();
+                        /* If element is in or near viewport, animate it in */
+                        if (rect.top < window.innerHeight + 200) {
+                            el.classList.add('aos-animate');
+                        }
+                    });
+                }, 3000);
+
+                /* On scroll, also do a manual check as ultimate fallback */
+                var scrollCheckTimer = null;
+                window.addEventListener('scroll', function () {
+                    if (scrollCheckTimer) return;
+                    scrollCheckTimer = setTimeout(function () {
+                        scrollCheckTimer = null;
+                        document.querySelectorAll('[data-aos]:not(.aos-animate)').forEach(function (el) {
+                            var rect = el.getBoundingClientRect();
+                            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                                el.classList.add('aos-animate');
+                            }
+                        });
+                    }, 100);
+                }, { passive: true });
+            }
+
+            /* ── Run everything on DOM ready ── */
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function () {
+                    initAOS();
+                    applyDelays();
+                    setupFallbackObserver();
+                });
+            } else {
+                initAOS();
+                applyDelays();
+                setupFallbackObserver();
+            }
+
+            /* ── Also re-run after full page load (images etc.) ── */
+            window.addEventListener('load', function () {
+                initAOS();
+                if (typeof AOS !== 'undefined') { AOS.refresh(); }
+            });
+
+        })();
+    </script>
+
+    <!-- Modals -->
+    <div id="search" class="p-0 modal modal-search fade" role="dialog">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    <i class="icon-close fas fa-arrow-left"></i>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="col-12 p-0 align-self-center">
+                            <div class="row"><div class="col-12 p-0"><h2>What are you looking for?</h2></div></div>
+                            <div class="row"><div class="col-12 p-0 input-group"><input type="search" placeholder="Enter Keywords"></div></div>
+                            <div class="row"><div class="col-12 p-0 input-group align-self-center"><button class="btn primary-button">SEARCH</button></div></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="p-0 modal modal-menu fade" role="dialog">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    <i class="icon-close fas fa-arrow-left"></i>
+                </div>
+                <div class="menu modal-body">
+                    <ul class="navbar-nav items">
+                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a href="{{ route('services-hedgefunds') }}" class="nav-link">HEDGE FUNDS</a></li>
+                        <li class="nav-item"><a href="{{ route('services-treasuryfunds') }}" class="nav-link">TREASURY FUNDS</a></li>
+                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart" class="p-0 modal modal-cart fade" role="dialog">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    <i class="icon-close fas fa-arrow-left"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="widget woocommerce widget_shopping_cart">
+                        <div class="widget_shopping_cart_content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         MOBILE HERO FIX — loaded LAST so it overrides all theme CSS
+         Must stay here, after all external stylesheets
+    ============================================================ -->
+    <style>
+    @@media (max-width: 991px) {
+        html, body { overflow-x: hidden !important; width: 100% !important; max-width: 100% !important; }
+
+        /* Slider container */
+        #slider { background: #000; width: 100% !important; max-width: 100% !important; overflow: hidden !important; }
+        #slider .swiper-container,
+        #slider .swiper-wrapper,
+        #slider .swiper-slide { display: contents !important; width: 100% !important; max-width: 100% !important; overflow: hidden !important; }
+
+        /* Hero image — show page-specific image */
+        #slider .full-image { display: block !important; position: absolute !important; top: 0; left: 0; width: 100% !important; height: 100% !important; object-fit: cover !important; z-index: 0 !important; }
+
+        /* Dark overlay */
+        #slider .swiper-slide::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 1; }
+        #slider .parallax-y-bg { display: none !important; }
+
+        /* Slide content */
+        #slider .slide-content { display: block !important; position: relative !important; z-index: 2 !important; width: 100% !important; max-width: 100% !important; padding-top: 100px !important; padding-bottom: 60px !important; min-height: 280px; overflow: hidden !important; }
+
+        /* Kill inline width on slide-width divs (50%, 55%, 40%) */
+        #slider .slide-width { width: 100% !important; max-width: 100% !important; padding: 0 20px !important; }
+
+        /* ── THE KEY FIX: h1 font size ── */
+        #slider h1,
+        #slider h1.title,
+        #slider h1.heading,
+        .hero h1,
+        .hero h1.title,
+        .full-slider h1,
+        .swiper-slide h1,
+        .swiper-slide h1.title,
+        .slide-content h1 { font-size: 22px !important; line-height: 1.35 !important; margin-bottom: 12px !important; word-break: normal !important; overflow-wrap: break-word !important; white-space: normal !important; }
+
+        /* Description text */
+        #slider p.description,
+        #slider p.paragraph { font-size: 13px !important; line-height: 1.6 !important; margin-bottom: 18px !important; }
+
+        /* Buttons */
+        #slider .d-sm-inline-flex { display: flex !important; flex-direction: column !important; gap: 10px !important; align-items: flex-start !important; }
+        #slider .btn { margin-left: 0 !important; margin-top: 0 !important; font-size: 12px !important; padding: 9px 18px !important; }
+
+        /* Alignment */
+        #slider .inner { justify-content: flex-start !important; text-align: left !important; }
+        #slider .slide-content .col-12 { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; padding-left: 15px !important; padding-right: 15px !important; }
+
+        /* Breadcrumb / inner hero pages */
+        .slider-h-auto.no-slider .inner { padding-top: 0px; }
+        .effect-static-text { padding: 80px 20px 40px; color: #fff; text-align: left; }
+    }
+    </style>
+
+    <!-- ============================================================
+         MOBILE HERO JS FIX - simplified, no observer
+    ============================================================ -->
+    <script>
+    (function() {
+        function isMobile() { return window.innerWidth <= 991; }
+
+        function applyMobileFix() {
+            if (!isMobile()) return;
+
+            /* Hero h1 */
+            document.querySelectorAll(
+                '.hero h1, .full-slider h1, #slider h1, .swiper-slide h1, .slide-content h1, h1.title, h1.heading'
+            ).forEach(function(el) {
+                el.style.setProperty('font-size', '22px', 'important');
+                el.style.setProperty('line-height', '1.35', 'important');
+                el.style.setProperty('white-space', 'normal', 'important');
+                el.style.setProperty('word-break', 'break-word', 'important');
+                el.style.setProperty('margin-bottom', '12px', 'important');
+            });
+
+            /* Section h2 headings */
+            document.querySelectorAll(
+                '.sec-title h2, .about-style1-area h2, .working-process-area h2, .testimonial-style1-area h2, section h2.heading'
+            ).forEach(function(el) {
+                el.style.setProperty('font-size', '24px', 'important');
+                el.style.setProperty('line-height', '1.3', 'important');
+                el.style.setProperty('word-break', 'break-word', 'important');
+            });
+
+            /* Slogan */
+            document.querySelectorAll('.slogan-style3__content h3').forEach(function(el) {
+                el.style.setProperty('font-size', '18px', 'important');
+                el.style.setProperty('line-height', '1.5', 'important');
+            });
+
+            /* Process cards */
+            document.querySelectorAll('.working-process__single h3').forEach(function(el) {
+                el.style.setProperty('font-size', '18px', 'important');
+            });
+
+            /* Slide width — only set width, don't touch the swiper internal styles */
+            document.querySelectorAll('.slide-width').forEach(function(el) {
+                el.style.setProperty('width', '100%', 'important');
+                el.style.setProperty('max-width', '100%', 'important');
+            });
+
+            /* Description text */
+            document.querySelectorAll('#slider p.description, .hero p.description').forEach(function(el) {
+                el.style.setProperty('font-size', '13px', 'important');
+                el.style.setProperty('line-height', '1.6', 'important');
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', applyMobileFix);
+        } else {
+            applyMobileFix();
+        }
+        window.addEventListener('load', applyMobileFix);
+
+        /* Only a few re-runs, no observer */
+        setTimeout(applyMobileFix, 500);
+        setTimeout(applyMobileFix, 1500);
+        setTimeout(applyMobileFix, 3000);
+
+        window.addEventListener('resize', applyMobileFix);
+    })();
+    </script>
+
+    <!-- ============================================================
+         CUSTOM SCROLL ANIMATION for .about-style1-area on mobile
+         This section uses no AOS/WOW classes, so add our own.
+    ============================================================ -->
+    <style>
+        @@media (max-width: 991px) {
+            .about-style1-area .about-style1__image,
+            .about-style1-area .about-style1__content {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+            }
+            .about-style1-area .about-style1__image.oa-in-view {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .about-style1-area .about-style1__content.oa-in-view {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.2s;
+            }
+        }
+    </style>
+    <script>
+        (function() {
+            if (window.innerWidth > 991) return;
+            if (!('IntersectionObserver' in window)) {
+                /* Old browsers — just show */
+                document.querySelectorAll('.about-style1__image, .about-style1__content').forEach(function(el) {
+                    el.classList.add('oa-in-view');
+                });
+                return;
+            }
+            var obs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('oa-in-view');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+            function init() {
+                document.querySelectorAll('.about-style1__image, .about-style1__content').forEach(function(el) {
+                    obs.observe(el);
+                });
+                /* Safety net — show after 4s if scroll never triggers */
+                setTimeout(function() {
+                    document.querySelectorAll('.about-style1__image, .about-style1__content').forEach(function(el) {
+                        var rect = el.getBoundingClientRect();
+                        if (rect.top < window.innerHeight + 300) {
+                            el.classList.add('oa-in-view');
+                        }
+                    });
+                }, 4000);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+    <style>
+        body { top: 0 !important; position: static !important; min-height: auto !important; }
+        html { margin-top: 0 !important; }
+        .goog-te-banner-frame.skiptranslate, iframe.skiptranslate { display: none !important; }
+        .goog-tooltip, .goog-tooltip:hover { display: none !important; }
+        .goog-text-highlight { background: transparent !important; box-shadow: none !important; }
+        #google_translate_element { display: none !important; }
+        .VIpgJd-ZVi9od-ORHb-OEVmcd, .VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+        .VIpgJd-yAWNEb-L7lbkb, .goog-te-balloon-frame,
+        div[style*="translate.googleapis.com"] { display: none !important; visibility: hidden !important; }
+    </style>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ar,fr,de,hi',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+        function changeLanguage(lang) {
+            var interval = setInterval(function () {
+                var select = document.querySelector(".goog-te-combo");
+                if (select) {
+                    select.value = lang;
+                    select.dispatchEvent(new Event("change"));
+                    document.body.style.top = "0px";
+                    clearInterval(interval);
+                }
+            }, 300);
+        }
+        setInterval(function () {
+            document.body.style.top = "0px";
+            var frame = document.querySelector(".goog-te-banner-frame");
+            if (frame) { frame.remove(); }
+        }, 500);
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
-
 </html>

@@ -4927,7 +4927,7 @@ footer .copyright p {
 
   body .full-slider .inner,
   body .no-slider .inner {
-    padding: 0 25px;
+    padding: 0 25px !important;
   }  
   
   body .full-slider .inner .slide-width,
@@ -5186,6 +5186,12 @@ footer .copyright p {
     min-width: 180px;
     font-size: 0.9rem;
   }
+  #slider h1.title {
+	line-height: 1 !important;
+}
+#slider .slide-content {
+	padding-bottom: 0px !important;
+}
 
   /* #endregion Slider */
 
@@ -5240,7 +5246,23 @@ footer .copyright p {
   }
 
   /* #endregion Features */
+  
+  
+  
+   /* custom */
+
+
+
+
+
+
+
+ /* End custom */
+ 
 }
+
+
+
 
 @media (max-width: 576px) {
 

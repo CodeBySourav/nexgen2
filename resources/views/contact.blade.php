@@ -1,31 +1,24 @@
 @extends('layouts.app')
 
-@section('title', 'Contact') 
+@section('title', 'Contact')
 
 @section('content')
 
-
 <body
     class="wp-singular page-template page-template-templates page-template-full-width page-template-templatesfull-width-php page page-id-6480 wp-theme-nexgen theme-nexgen woocommerce-js woocommerce-active elementor-default elementor-kit-10201 elementor-page elementor-page-6480">
-     
+
     <div data-elementor-type="wp-page" data-elementor-id="6480" class="elementor elementor-6480">
+
         <!-- Hero -->
         <section id="slider" class="hero p-0 odd featured">
             <div class="swiper-container no-slider animation slider-h-50 slider-h-auto">
                 <div class="swiper-wrapper">
-
-                    <!-- Item 1 -->
                     <div class="swiper-slide slide-center">
-
-                        <!-- Media -->
                         <video class="full-image to-bottom" data-mask="70" playsinline autoplay muted loop>
                             <source src="videos/work.mp4" type="video/mp4" />
-                        </video> 
-
+                        </video>
                         <div class="slide-content row text-center">
                             <div class="col-12 mx-auto inner">
-
-                                <!-- Content -->
                                 <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -36,90 +29,117 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
+        <!-- Contact Form -->
         <section id="contact" class="section-1 form contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8 pr-md-5 align-self-center text">
                         <div class="row intro">
                             <div class="col-12 p-0">
-                                <span class="pre-title m-0">Send a message</span>
+                                <span class="pre-title m-0">Start your journey with one message</span>
                                 <h2>Get in <span class="featured"><span>Touch</span></span></h2>
-                                <p>We will respond to your message as soon as possible.</p>
+                                <p>Fill in the form and a dedicated advisor will be in touch within one business day. Your first conversation is always complimentary and without obligation.</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 p-0">
                                 <form action="php/form.php" id="nexgen-simple-form" class="nexgen-simple-form">
                                     <input type="hidden" name="section" value="nexgen_form">
-
                                     <input type="hidden" name="reCAPTCHA">
-                                    <!-- Remove this field if you want to disable recaptcha -->
 
                                     <div class="row form-group-margin">
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <input type="text" name="name" class="form-control field-name" placeholder="Name">
+                                            <input type="text" name="name" class="form-control field-name" placeholder="First Name">
                                         </div>
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <input type="email" name="email" class="form-control field-email" placeholder="Email">
+                                            <input type="text" name="lastname" class="form-control field-name" placeholder="Last Name">
                                         </div>
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <input type="text" name="phone" class="form-control field-phone" placeholder="Phone">
+                                            <input type="email" name="email" class="form-control field-email" placeholder="Email Address">
+                                        </div>
+                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                            <input type="text" name="phone" class="form-control field-phone" placeholder="Phone Number">
                                         </div>
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
                                             <i class="icon-arrow-down mr-3"></i>
                                             <select name="info" class="form-control field-info">
-                                                <option value="" selected disabled>More Info</option>
-                                                <option>Audit & Assurance</option>
-                                                <option>Treasury Funds</option>
-                                                <option>Analytics and M&A</option>
-                                                <option>Middle Marketing</option>
-                                                <option>Legal Consulting</option>
-                                                <option>Regulatory Risk</option>
-                                                <option>Other</option>
+                                                <option value="" selected disabled>I am enquiring about</option>
+                                                <option value="Wealth Management">Wealth Management</option>
+                                                <option value="Investment Advisory">Investment Advisory</option>
+                                                <option value="Tax Optimisation">Tax Optimisation</option>
+                                                <option value="Retirement Planning">Retirement Planning</option>
+                                                <option value="Risk and Insurance">Risk &amp; Insurance</option>
+                                                <option value="Estate and Legacy Planning">Estate &amp; Legacy Planning</option>
+                                                <option value="General Enquiry">General Enquiry</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                            <i class="icon-arrow-down mr-3"></i>
+                                            <select name="office" class="form-control field-info">
+                                                <option value="" selected disabled>Preferred Office</option>
+                                                <option value="Dubai UAE">Dubai — UAE</option>
+                                                <option value="India Gurugram">India — Gurugram</option>
+                                                <option value="London UK">London — UK</option>
+                                                <option value="No Preference">No Preference</option>
                                             </select>
                                         </div>
                                         <div class="col-12 m-0 p-2 input-group">
-                                            <textarea name="message" class="form-control field-message" placeholder="Message"></textarea>
+                                            <textarea name="message" class="form-control field-message" placeholder="Your Message"></textarea>
+                                        </div>
+                                        <div class="col-12 m-0 p-2">
+                                            <small style="color:#888;">By submitting this form you agree to our Privacy Policy. We will never share your information with third parties.</small>
                                         </div>
                                         <div class="col-12 col-12 m-0 p-2 input-group">
                                             <span class="form-alert"></span>
                                         </div>
                                         <div class="col-12 input-group m-0 p-2">
-                                            <a class="btn primary-button">SEND</a>
+                                            <a class="btn primary-button">SEND MESSAGE →</a>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
+
+                    <!-- Dubai Contact Info -->
                     <div class="col-12 col-md-4">
                         <div class="contacts">
-                            <h4>Example Inc.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>Curabitur convallis, diam a egestas iaculis, neque lorem interdum felis, in viverra lacus tortor in leo.</p>
+                            <h4>Oceano Apex — Dubai</h4>
+                            <p>Our Dubai office serves clients across the UAE and Gulf region. No obligation — just an honest conversation with a qualified advisor genuinely invested in your success.</p>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="tel:+971585015666" class="nav-link">
                                         <i class="fas fa-phone-alt mr-2"></i>
-                                        +1 (305) 1234-5678
+                                        +971 585 015 666
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="mailto:dubai@oceanoapex.com" class="nav-link">
                                         <i class="fas fa-envelope mr-2"></i>
-                                        hello@example.com
+                                        dubai@oceanoapex.com
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.oceanoapex.com" target="_blank" class="nav-link">
+                                        <i class="fas fa-globe mr-2"></i>
+                                        www.oceanoapex.com
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="fas fa-map-marker-alt mr-2"></i>
-                                        Main Avenue, 987
+                                        Meydan Grandstand, 6th Floor,<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meydan Road, Nad Al Sheba, Dubai, UAE
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-clock mr-2"></i>
+                                        Sun – Thu, 9:00 AM – 6:00 PM GST
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -132,95 +152,314 @@
             </div>
         </section>
 
-        <!-- About -->
-        <section id="about" class="section-2 highlights image-right" style="background-color: #000;">
-            <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 pr-md-5 align-self-top text">
-                    <div data-aos="fade-up"  class="row intro">
-                        <div class="col-12 p-0">
-                            <span class="pre-title m-0">Talk to an expert</span>
-                            <h2>Our<br>Business<br>Units</h2>
-                            <p>Curabitur convallis, diam a egestas iaculis, neque lorem interdum felis, in viverra lacus tortor in leo.</p>
+        <!-- Map Modal -->
+        <div id="map" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header absolute" data-dismiss="modal">
+                        <div class="icon-wrapper">
+                            <i class="icon-close fas fa-times"></i>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 pr-md-5 align-self-top text">
-                    <div class="row items">                             
-                        <div data-aos="fade-up" class="col-12 p-0 pr-md-4 item">
-                            <div class="contacts">
-                                <h4>Branch</h4>
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="fas fa-phone-alt mr-2"></i>
-                                            +1 (305) 1234-5678
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="fas fa-envelope mr-2"></i>
-                                            hello@example.com
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="fas fa-map-marker-alt mr-2"></i>
-                                            Main Avenue, 987
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="mt-2 btn outline-button" data-toggle="modal" data-target="#map">VIEW MAP</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>     
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 pr-md-5 align-self-top text">
-                    <div class="row items">                             
-                        <div data-aos="fade-up" class="col-12 p-0 pr-md-4 item">
-                            <div class="contacts">
-                                <h4>Headquarters</h4>
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="fas fa-phone-alt mr-2"></i>
-                                            +1 (305) 1234-5678
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="fas fa-envelope mr-2"></i>
-                                            hello@example.com
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="fas fa-map-marker-alt mr-2"></i>
-                                            Main Avenue, 987
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="mt-2 btn outline-button" data-toggle="modal" data-target="#map">VIEW MAP</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>     
+                    <div class="modal-body p-0">
+                        <iframe loading="lazy"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178532482555!2d55.30678!3d25.17316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69c1b6e0b3c9%3A0x1!2sMeydan+Grandstand%2C+Meydan+Rd%2C+Dubai!5e0!3m2!1sen!2sae"
+                            width="600" height="450" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Office Locations -->
+        <section id="about" class="oa-offices-section">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="oa-offices-header" data-aos="fade-up">
+                    <span class="pre-title">Talk to an expert</span>
+                    <h2>Our Global Offices</h2>
+                    <p>Oceano Apex operates across three locations — serving clients in the UAE, India, and the United Kingdom. Reach out to the office closest to you or connect with us online.</p>
+                </div>
+
+                <!-- Office Cards Grid -->
+                <div class="oa-offices-grid">
+
+                    <!-- Dubai -->
+                    <div class="oa-office-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="oa-office-badge">Est. 2024</div>
+                        <h4 class="oa-office-title">
+                            <span class="oa-office-flag">🇦🇪</span>
+                            Dubai — UAE
+                        </h4>
+                        <ul class="oa-contact-list">
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+971585015666">+971 585 015 666</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:dubai@oceanoapex.com">dubai@oceanoapex.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba, Dubai, UAE</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Sun – Thu, 9:00 AM – 6:00 PM GST</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="oa-map-btn" data-toggle="modal" data-target="#map">
+                            <i class="fas fa-map mr-2"></i>View Map
+                        </a>
+                    </div>
+
+                    <!-- India -->
+                    <div class="oa-office-card oa-office-hq" data-aos="fade-up" data-aos-delay="200">
+                        <div class="oa-office-badge">Headquarters · Est. 2015</div>
+                        <h4 class="oa-office-title">
+                            <span class="oa-office-flag">🇮🇳</span>
+                            Gurugram — India
+                        </h4>
+                        <ul class="oa-contact-list">
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+1244453335">+124-445-3335</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@oceanoapex.com">info@oceanoapex.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-globe"></i>
+                                <a href="https://www.oceanoapex.com" target="_blank">www.oceanoapex.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Building 74, DLF-1, Sector 28, Gurugram, Haryana, India</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon – Fri, 9:00 AM – 6:30 PM IST</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- London -->
+                    <div class="oa-office-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="oa-office-badge">Est. 2024</div>
+                        <h4 class="oa-office-title">
+                            <span class="oa-office-flag">🇬🇧</span>
+                            London — UK
+                        </h4>
+                        <ul class="oa-contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:london@oceanoapex.com">london@oceanoapex.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-globe"></i>
+                                <a href="https://www.oceanoapex.com" target="_blank">www.oceanoapex.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon – Fri, 9:00 AM – 5:30 PM GMT</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </section>
+
+    </div>
+
 <style>
+/* ── Base section ── */
 section {
-        position: relative;
-        width: 100%;
-        padding: 130px 0;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center; 
-        }
+    position: relative;
+    width: 100%;
+    padding: 130px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* ── Offices Section ── */
+.oa-offices-section {
+    background-color: #000;
+    padding: 80px 0;
+    background-attachment: scroll; /* override fixed for this section */
+}
+
+/* Section header */
+.oa-offices-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+.oa-offices-header .pre-title {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin-bottom: 12px;
+}
+.oa-offices-header h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.oa-offices-header p {
+    color: #9a9a9a;
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ── Cards grid: 3 equal columns on desktop ── */
+.oa-offices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* ── Individual card ── */
+.oa-office-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 32px 28px;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+.oa-office-card:hover {
+    border-color: #c9a96e;
+}
+
+/* HQ card slight highlight */
+.oa-office-hq {
+    border-color: #2a2a1a;
+    background: #111008;
+}
+
+/* Badge */
+.oa-office-badge {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+/* Title row */
+.oa-office-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.oa-office-flag {
+    font-size: 22px;
+    line-height: 1;
+}
+
+/* Contact list */
+.oa-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+.oa-contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #1e1e1e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.oa-contact-list li:last-child {
+    border-bottom: none;
+}
+.oa-contact-list li i {
+    color: #c9a96e;
+    font-size: 13px;
+    margin-top: 3px;
+    flex-shrink: 0;
+    width: 16px;
+    text-align: center;
+}
+.oa-contact-list li a,
+.oa-contact-list li span {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.oa-contact-list li a:hover {
+    color: #fff;
+}
+
+/* Map button */
+.oa-map-btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    border: 1px solid #c9a96e;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.oa-map-btn:hover {
+    background: #c9a96e;
+    color: #000;
+    text-decoration: none;
+}
+
+/* ── Tablet: 2 columns ── */
+@media (max-width: 991px) {
+    .oa-offices-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .oa-offices-header h2 {
+        font-size: 28px;
+    }
+}
+
+/* ── Mobile: 1 column ── */
+@media (max-width: 575px) {
+    .oa-offices-section {
+        padding: 60px 0;
+    }
+    .oa-offices-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .oa-office-card {
+        padding: 24px 20px;
+    }
+    .oa-offices-header {
+        margin-bottom: 36px;
+    }
+    .oa-offices-header h2 {
+        font-size: 24px;
+    }
+    .oa-office-title {
+        font-size: 18px;
+    }
+}
 </style>
- @endsection
-    
+
+@endsection
