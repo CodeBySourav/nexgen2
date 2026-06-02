@@ -402,7 +402,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="menu-item nav-item"><a href="#" class="nav-link">BLOG</a></li>
+                    <li class="menu-item nav-item"><a href="{{ asset('blog') }}" class="nav-link">BLOG</a></li>
                 </ul>
                 <ul class="navbar-nav toggle">
                     <li class="nav-item">
