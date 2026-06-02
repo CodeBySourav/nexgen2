@@ -866,8 +866,8 @@
                     <ul class="navbar-nav items">
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
                         <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
-                        <li class="nav-item"><a href="{{ route('services-hedgefunds') }}" class="nav-link">HEDGE FUNDS</a></li>
-                        <li class="nav-item"><a href="{{ route('services-treasuryfunds') }}" class="nav-link">TREASURY FUNDS</a></li>
+                        <li class="nav-item"><a href="{{ asset('service-hedge-funds') }}" class="nav-link">HEDGE FUNDS</a></li>
+                        <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">TREASURY FUNDS</a></li>
                         <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">CONTACT</a></li>
                     </ul>
                 </div>
