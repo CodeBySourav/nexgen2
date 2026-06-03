@@ -246,27 +246,52 @@
                         </ul>
                     </div>
 
-                    <!-- London -->
+                    <!-- London --> 
                     <div class="oa-office-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="oa-office-badge">Est. 2024</div>
+
                         <h4 class="oa-office-title">
                             <span class="oa-office-flag">🇬🇧</span>
                             London — UK
                         </h4>
+
                         <ul class="oa-contact-list">
+
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+447438440330">
+                                    +44 7438 440330
+                                </a>
+                            </li>
+
                             <li>
                                 <i class="fas fa-envelope"></i>
-                                <a href="mailto:london@oceanoapex.com">london@oceanoapex.com</a>
+                                <a href="mailto:london@oceanoapex.com">
+                                    london@oceanoapex.com
+                                </a>
                             </li>
+
                             <li>
                                 <i class="fas fa-globe"></i>
-                                <a href="https://www.oceanoapex.com" target="_blank">www.oceanoapex.com</a>
+                                <a href="https://www.oceanoapex.com" target="_blank">
+                                    www.oceanoapex.com
+                                </a>
                             </li>
+
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>
+                                    20 Wenlock Road, London, England, N1 7GU
+                                </span>
+                            </li>
+
                             <li>
                                 <i class="fas fa-clock"></i>
                                 <span>Mon – Fri, 9:00 AM – 5:30 PM GMT</span>
                             </li>
+
                         </ul>
+ 
                     </div>
 
                 </div>
