@@ -305,7 +305,7 @@
                                                                         <i class="card-icon icon-organization"></i>
                                                                     </div>
                                                                     <div class="text-left">
-                                                                        <h4 class="heading">Wealth Management</h4>
+                                                                        <h4 class="heading">Hedge Funds</h4>
                                                                     </div>
                                                                     <div class="text-left">
                                                                         <p class="paragraph">
@@ -340,7 +340,7 @@
                                                                         <i class="card-icon icon-briefcase"></i>
                                                                     </div>
                                                                     <div class="text-left">
-                                                                        <h4 class="heading">Investment Advisory</h4>
+                                                                        <h4 class="heading">Treasury Management</h4>
                                                                     </div>
                                                                     <div class="text-left">
                                                                         <p class="paragraph">
