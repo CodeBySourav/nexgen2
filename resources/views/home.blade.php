@@ -1076,12 +1076,8 @@
                                                                                     aria-invalid="false"
                                                                                     name="Subject">
                                                                                     <option value="">— Select a service —</option>
-                                                                                    <option value="Wealth Management">Wealth Management</option>
-                                                                                    <option value="Investment Advisory">Investment Advisory</option>
-                                                                                    <option value="Tax Optimisation">Tax Optimisation</option>
-                                                                                    <option value="Retirement Planning">Retirement Planning</option>
-                                                                                    <option value="Risk and Insurance">Risk &amp; Insurance</option>
-                                                                                    <option value="Estate and Legacy Planning">Estate &amp; Legacy Planning</option>
+                                                                                    <option value="Hedge Funds">Hedge Funds</option>
+                                                                                    <option value="Treasury Management">Treasury Management</option>
                                                                                     <option value="General Enquiry">General Enquiry</option>
                                                                                 </select></span> </label>
                                                                     </p>
