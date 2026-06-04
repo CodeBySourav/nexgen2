@@ -367,6 +367,7 @@
                     </li>
                     <li class="nav-item dropdown language-dropdown">
                         <select onchange="changeLanguage(this.value)" class="form-control lang-select">
+                            <option value="">Language</option>
                             <option value="en">English</option>
                             <option value="ar">Arabic</option>
                         </select>
