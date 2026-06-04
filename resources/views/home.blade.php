@@ -998,19 +998,9 @@
                                                         <div class="screen-reader-response">
                                                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                             <ul></ul>
-                                                        </div>
-                                                        <form action="/home-1/#wpcf7-f6944-p6480-o2"
-                                                            method="post" class="wpcf7-form init"
-                                                            aria-label="Contact form" novalidate="novalidate"
-                                                            data-status="init">
-                                                            <div style="display: none;">
-                                                                <input type="hidden" name="_wpcf7" value="6944">
-                                                                <input type="hidden" name="_wpcf7_version" value="6.0.1">
-                                                                <input type="hidden" name="_wpcf7_locale" value="en_US">
-                                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6944-p6480-o2">
-                                                                <input type="hidden" name="_wpcf7_container_post" value="6480">
-                                                                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                                                            </div>
+                                                        </div> 
+                                                        <form action="{{ route('contact.submit2') }}" method="POST">
+                                                            @csrf 
                                                             <div class="row">
                                                                 <div class="col-12 col-md-6 input-group">
                                                                     <p><label> First Name <span
@@ -1021,7 +1011,7 @@
                                                                                     aria-required="true"
                                                                                     aria-invalid="false"
                                                                                     value="" type="text"
-                                                                                    name="your-name"></span>
+                                                                                    name="firstname"></span>
                                                                         </label>
                                                                     </p>
                                                                 </div>
@@ -1034,7 +1024,7 @@
                                                                                     aria-required="true"
                                                                                     aria-invalid="false"
                                                                                     value="" type="text"
-                                                                                    name="your-lastname"></span>
+                                                                                    name="lastname"></span>
                                                                         </label>
                                                                     </p>
                                                                 </div>
@@ -1049,19 +1039,19 @@
                                                                                     aria-required="true"
                                                                                     aria-invalid="false"
                                                                                     value="" type="email"
-                                                                                    name="your-email"></span>
+                                                                                    name="email"></span>
                                                                         </label>
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-12 col-md-6 input-group">
                                                                     <p><label> Phone Number <span
                                                                                 class="wpcf7-form-control-wrap"
-                                                                                data-name="your-phone"><input
+                                                                                data-name="phone"><input
                                                                                     class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number"
                                                                                     aria-required="true"
                                                                                     aria-invalid="false"
                                                                                     value="" type="number"
-                                                                                    name="your-phone"></span>
+                                                                                    name="phone"></span>
                                                                         </label>
                                                                     </p>
                                                                 </div>
@@ -1122,8 +1112,7 @@
                                                                             type="submit" value="SEND MESSAGE →">
                                                                     </p>
                                                                 </div>
-                                                            </div>
-                                                            <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                            </div> 
                                                         </form>
                                                     </div>
                                                 </div>
@@ -1264,5 +1253,42 @@
         </section>
 
     </div>
+@if(session('success'))
 
+<div id="success-popup"
+    style="
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 999999;
+        background: #28a745;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        font-weight: 600;
+        font-size: 16px;
+        min-width: 300px;
+    ">
+
+    {{ session('success') }}
+
+</div>
+
+<script>
+    setTimeout(function () {
+        let popup = document.getElementById('success-popup');
+
+        if (popup) {
+            popup.style.transition = "0.5s";
+            popup.style.opacity = "0";
+
+            setTimeout(() => {
+                popup.remove();
+            }, 500);
+        }
+    }, 3000);
+</script>
+
+@endif
 @endsection

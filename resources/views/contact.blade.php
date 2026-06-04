@@ -47,13 +47,11 @@
                         </div>
                         <div class="row">
                             <div class="col-12 p-0">
-                                <form action="php/form.php" id="nexgen-simple-form" class="nexgen-simple-form">
-                                    <input type="hidden" name="section" value="nexgen_form">
-                                    <input type="hidden" name="reCAPTCHA">
-
+                                <form action="{{ route('contact.submit2') }}" method="POST" id="nexgen-simple-form" class="nexgen-simple-form">
+                                     @csrf 
                                     <div class="row form-group-margin">
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <input type="text" name="name" class="form-control field-name" placeholder="First Name">
+                                            <input type="text" name="firstname" class="form-control field-name" placeholder="First Name">
                                         </div>
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
                                             <input type="text" name="lastname" class="form-control field-name" placeholder="Last Name">
@@ -66,7 +64,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
                                             <i class="icon-arrow-down mr-3"></i>
-                                            <select name="info" class="form-control field-info">
+                                            <select name="Subject" class="form-control field-info">
                                                 <option value="" selected disabled>I am enquiring about</option>
                                                 <option value="Hedge Funds">Hedge Funds</option>
                                                 <option value="Treasury Management">Treasury Management</option>
@@ -75,7 +73,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
                                             <i class="icon-arrow-down mr-3"></i>
-                                            <select name="office" class="form-control field-info">
+                                            <select name="PreferredOffice" class="form-control field-info">
                                                 <option value="" selected disabled>Preferred Office</option>
                                                 <option value="Dubai UAE">Dubai — UAE</option>
                                                 <option value="India Gurugram">India — Gurugram</option>
@@ -92,8 +90,9 @@
                                         <div class="col-12 col-12 m-0 p-2 input-group">
                                             <span class="form-alert"></span>
                                         </div>
-                                        <div class="col-12 input-group m-0 p-2">
-                                            <a class="btn primary-button">SEND MESSAGE →</a>
+                                        <div class="col-12 input-group m-0 p-2"> 
+                                            <input class="wpcf7-form-control wpcf7-submit has-spinner"
+                                                                            type="submit" value="SEND MESSAGE →">
                                         </div>
                                     </div>
                                 </form>
@@ -480,5 +479,42 @@ section {
     }
 }
 </style>
+@if(session('success'))
 
+<div id="success-popup"
+    style="
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 999999;
+        background: #28a745;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        font-weight: 600;
+        font-size: 16px;
+        min-width: 300px;
+    ">
+
+    {{ session('success') }}
+
+</div>
+
+<script>
+    setTimeout(function () {
+        let popup = document.getElementById('success-popup');
+
+        if (popup) {
+            popup.style.transition = "0.5s";
+            popup.style.opacity = "0";
+
+            setTimeout(() => {
+                popup.remove();
+            }, 500);
+        }
+    }, 3000);
+</script>
+
+@endif
 @endsection

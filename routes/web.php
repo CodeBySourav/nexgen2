@@ -6,6 +6,7 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Contact_RequestsController;
+use App\Http\Controllers\ContactRequest2Controller;
 
 
 Route::get('/', function () {
@@ -28,7 +29,10 @@ Route::get('/service', function () {
 
 
 Route::post('/contact-submit', [Contact_RequestsController::class, 'store'])->name('contact.submit');
+use App\Http\Controllers\ContactRequestController;
 
+Route::post('/contact-submit2', [ContactRequest2Controller::class, 'store'])
+    ->name('contact.submit2');
 
 Route::get('/blog', [PostController::class, 'blog'])->name('blog.index');
 Route::get('/blog/{slug}', [PostController::class, 'showBlog'])->name('blog.show');
