@@ -357,17 +357,17 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" target="_self" class="nav-link m-0"><i class="fab fa-facebook-f m-0"></i></a>
+                        <a href="https://www.facebook.com/oceanoapex/" target="_self" class="nav-link m-0"><i class="fab fa-facebook-f m-0"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" target="_self" class="nav-link m-0"><i class="fab fa-twitter m-0"></i></a>
+                        <a href="https://www.instagram.com/oceanoapex" target="_self" class="nav-link m-0"><i class="fab fa-twitter m-0"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" target="_self" class="nav-link m-0"><i class="fab fa-linkedin-in m-0"></i></a>
+                        <a href="https://www.linkedin.com/company/oceano-apex" target="_self" class="nav-link m-0"><i class="fab fa-linkedin-in m-0"></i></a>
                     </li>
                     <li class="nav-item dropdown language-dropdown">
                         <select onchange="changeLanguage(this.value)" class="form-control lang-select">
-                            <option value="">Language</option>
+                            <option value="" translate="no">Language</option>
                             <option value="en">English</option>
                             <option value="ar">Arabic</option>
                         </select>

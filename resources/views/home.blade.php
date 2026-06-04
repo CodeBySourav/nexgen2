@@ -1210,6 +1210,40 @@
                                                 </ul>
                                             </div>
                                         </div>
+                                        <style>
+                                        .navbar-nav .nav-link{
+                                                display:flex;
+                                                align-items:flex-start;
+                                                gap:15px;
+                                                padding:12px 0;
+                                            }
+
+                                            .icon-wrapper{
+                                                min-width:50px;
+                                                width:50px;
+                                                height:50px;
+                                                border-radius:50%;
+                                                background:#2b241d;
+                                                display:flex;
+                                                align-items:center;
+                                                justify-content:center;
+                                                flex-shrink:0;
+                                            }
+
+                                            .list-icon{
+                                                color:#d8c3a5;
+                                                font-size:18px;
+                                            }
+
+                                            .list-text{
+                                                line-height:1.7;
+                                                color:#d8c3a5;
+                                            }
+
+                                            .navbar-nav .nav-item{
+                                                list-style:none;
+                                            }
+                                        </style>
                                         <div class="elementor-element elementor-element-86c69aa elementor-widget elementor-widget-nxg-button"
                                             data-id="86c69aa" data-element_type="widget"
                                             data-widget_type="nxg-button.default">

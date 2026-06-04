@@ -153,21 +153,21 @@
                         </div>
                         <div class="row items">
                             <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
-                                <h4><i class="mr-2 icon-badge"></i>Integrity</h4>
+                                <h4 style="color: #F5E6CA !important;"><i class="mr-2 icon-badge"></i>Integrity</h4>
                                 <p>Complete honesty and transparency in every interaction. Our advice is unbiased, our fees are clear, and our commitment to your interests is absolute.</p>
                             </div>
                             <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
-                                <h4><i class="mr-2 icon-lock"></i>Client-First</h4>
+                                <h4 style="color: #F5E6CA !important;"> <i class="mr-2 icon-lock"></i>Client-First</h4>
                                 <p>Your goals are the only goals in the room. We measure our success entirely by the outcomes we deliver for you.</p>
                             </div>
                         </div>
                         <div class="row items">
                             <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
-                                <h4><i class="mr-2 icon-note"></i>Innovation</h4>
+                                <h4 style="color: #F5E6CA !important;"><i class="mr-2 icon-note"></i>Innovation</h4>
                                 <p>We embrace evolving tools and strategies to ensure our clients benefit from the most intelligent, forward-looking approach to wealth management.</p>
                             </div>
                             <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
-                                <h4><i class="mr-2 icon-graduation"></i>Excellence</h4>
+                                <h4 style="color: #F5E6CA !important;"><i class="mr-2 icon-graduation"></i>Excellence</h4>
                                 <p>We hold ourselves to the highest standards in every dimension — research, planning, communication, and execution. Good enough is never enough.</p>
                             </div>
                         </div>

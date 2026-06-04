@@ -132,7 +132,7 @@
                                     target="_blank" class="nav-link">
                                         <i class="fas fa-map-marker-alt mr-2"></i>
                                         Meydan Grandstand, 6th Floor,<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meydan Road, Nad Al Sheba, Dubai, UAE
+                                         Meydan Road, Nad Al Sheba, Dubai, UAE
                                     </a>
                                 </li>
                                  
@@ -149,6 +149,40 @@
                 </div>
             </div>
         </section>
+        <style>
+                                        .navbar-nav .nav-link{
+                                                display:flex;
+                                                align-items:flex-start;
+                                                gap:15px;
+                                                padding:12px 0;
+                                            }
+
+                                            .icon-wrapper{
+                                                min-width:50px;
+                                                width:50px;
+                                                height:50px;
+                                                border-radius:50%;
+                                                background:#2b241d;
+                                                display:flex;
+                                                align-items:center;
+                                                justify-content:center;
+                                                flex-shrink:0;
+                                            }
+
+                                            .list-icon{
+                                                color:#d8c3a5;
+                                                font-size:18px;
+                                            }
+
+                                            .list-text{
+                                                line-height:1.7;
+                                                color:#d8c3a5;
+                                            }
+
+                                            .navbar-nav .nav-item{
+                                                list-style:none;
+                                            }
+                                        </style>
 
         <!-- Map Modal -->
         <div id="map" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
