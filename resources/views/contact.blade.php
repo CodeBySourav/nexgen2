@@ -130,20 +130,20 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8"
+                                    target="_blank" class="nav-link">
                                         <i class="fas fa-map-marker-alt mr-2"></i>
                                         Meydan Grandstand, 6th Floor,<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meydan Road, Nad Al Sheba, Dubai, UAE
                                     </a>
                                 </li>
+                                 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="fas fa-clock mr-2"></i>
-                                        Sun – Thu, 9:00 AM – 6:00 PM GST
+                                    <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8"
+                                    target="_blank"
+                                    class="mt-2 btn outline-button">
+                                        VIEW MAP
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="mt-2 btn outline-button" data-toggle="modal" data-target="#map">VIEW MAP</a>
                                 </li>
                             </ul>
                         </div>
@@ -202,17 +202,23 @@
                                 <a href="mailto:dubai@oceanoapex.com">dubai@oceanoapex.com</a>
                             </li>
                             <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba, Dubai, UAE</span>
+                                <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8" target="_blank">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>
+                                        Meydan Grandstand, 6th Floor, Meydan Road, 
+                                        Nad Al Sheba, Dubai, UAE
+                                    </span>
+                                </a>
                             </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Sun – Thu, 9:00 AM – 6:00 PM GST</span>
-                            </li>
+                                                        
                         </ul>
-                        <a href="#" class="oa-map-btn" data-toggle="modal" data-target="#map">
-                            <i class="fas fa-map mr-2"></i>View Map
-                        </a>
+                        <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8"
+                            target="_blank"
+                            class="oa-map-btn">
+                                
+                                <i class="fas fa-map mr-2"></i>View Map
+
+                            </a>
                     </div>
 
                     <!-- India -->
@@ -238,11 +244,7 @@
                             <li>
                                 <i class="fas fa-map-marker-alt"></i>
                                 <span>Building 74, DLF-1, Sector 28, Gurugram, Haryana, India</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Mon – Fri, 9:00 AM – 6:30 PM IST</span>
-                            </li>
+                            </li> 
                         </ul>
                     </div>
 
@@ -284,11 +286,7 @@
                                     20 Wenlock Road, London, England, N1 7GU
                                 </span>
                             </li>
-
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Mon – Fri, 9:00 AM – 5:30 PM GMT</span>
-                            </li>
+ 
 
                         </ul>
  

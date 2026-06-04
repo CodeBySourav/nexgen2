@@ -349,8 +349,7 @@
                                                                             financial goals.
                                                                         </p>
                                                                     </div>
-                                                                    <i class="btn-icon pulse-icon fas fa-arrow-right"
-                                                                        data-color="#dbc49d"></i>
+                                                                    
                                                                 </div>
                                                             </a>
                                                         </div>
@@ -1207,7 +1206,9 @@
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="#" class="nav-link text-left">
+                                                        <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8" 
+                                                                target="_blank" 
+                                                                class="nav-link text-left">
                                                             <div class="icon-wrapper">
                                                                 <i class="list-icon fas fa-map-marker-alt"></i>
                                                             </div>
@@ -1217,14 +1218,7 @@
                                                             </span>
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link text-left">
-                                                            <div class="icon-wrapper">
-                                                                <i class="list-icon fas fa-clock"></i>
-                                                            </div>
-                                                            <span class="list-text">Sun – Thu, 9:00 AM – 6:00 PM GST</span>
-                                                        </a>
-                                                    </li>
+                                                     
                                                 </ul>
                                             </div>
                                         </div>
@@ -1233,7 +1227,9 @@
                                             data-widget_type="nxg-button.default">
                                             <div class="elementor-widget-container">
                                                 <div class="d-flex justify-content-start">
-                                                    <a class="btn button" data-toggle="modal" data-target="#map">
+                                                    <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8"
+                                                    target="_blank"
+                                                    class="btn button">
                                                         VIEW MAP
                                                     </a>
                                                 </div>

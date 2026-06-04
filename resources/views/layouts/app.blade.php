@@ -338,11 +338,11 @@
         <nav class="navbar navbar-expand top">
             <div class="container header">
                 <ul class="navbar-nav left">
-                    <li class="nav-item">
+                   {{-- <li class="nav-item">
                         <a href="#" target="_self" class="nav-link m-0">
                             <i class="fas fa-clock text-after"></i>Open Hours: Sun – Thu, 9:00 – 18:00
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
                 <div class="ml-auto"></div>
                 <ul class="navbar-nav right">
@@ -375,6 +375,9 @@
             </div>
         </nav>
 
+        <!-- Google Translate -->
+        <div id="google_translate_element" style="display:none;"></div>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand navbar-fixed sub" style="position: absolute;">
             <div class="container header">
@@ -398,7 +401,7 @@
                             </a>
 
                             <a class="dropdown-item" href="{{ asset('service-treasury-funds') }}" style="color: black;">
-                                Treasury Funds
+                                Treasury Management
                             </a>
                         </div>
                     </li>
@@ -464,7 +467,7 @@
                             <h4>Services</h4>
                             <ul class="footer-link-list">
                                 <li><a href="{{ asset('service-hedge-funds') }}">Hedge Funds</a></li>
-                                <li><a href="{{ asset('service-treasury-funds') }}">Treasury Funds</a></li>
+                                <li><a href="{{ asset('service-treasury-funds') }}">Treasury Management</a></li>
                             </ul>
                         </div>
                     </div>
@@ -867,7 +870,7 @@
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
                         <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
                         <li class="nav-item"><a href="{{ asset('service-hedge-funds') }}" class="nav-link">HEDGE FUNDS</a></li>
-                        <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">TREASURY FUNDS</a></li>
+                        <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">Treasury Management</a></li>
                         <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">CONTACT</a></li>
                     </ul>
                 </div>

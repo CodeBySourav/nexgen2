@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Treasury Funds') 
+@section('title', 'Treasury Management') 
 
 @section('content')
 
@@ -26,7 +26,7 @@
                                     <!-- Content -->
                                     <h1 class="title effect-static-text">
                                         <span class="pre-title m-0">Fusions & acquisitions</span>
-                                           </br>Treasury Funds
+                                           </br>Treasury Management
                                     </h1>
                                      
                                     <!-- Action -->
@@ -52,7 +52,7 @@
                                                 <select name="info" class="form-control field-info" required>
                                                     <option value="" selected disabled>More Info</option>
                                                     <option>Audit & Assurance</option>
-                                                    <option>Treasury Funds</option>
+                                                    <option>Treasury Management</option>
                                                     <option>Analytics and M&A</option>
                                                     <option>Middle Marketing</option>
                                                     <option>Legal Consulting</option>

@@ -51,7 +51,7 @@
                                                 <select name="info" class="form-control field-info" required>
                                                     <option value="" selected disabled>More Info</option>
                                                     <option>Audit & Assurance</option>
-                                                    <option>Treasury Funds</option>
+                                                    <option>Treasury Management</option>
                                                     <option>Analytics and M&A</option>
                                                     <option>Middle Marketing</option>
                                                     <option>Legal Consulting</option>
