@@ -325,6 +325,135 @@
                 padding-left: 0;
             }
         }
+
+ 
+/* =========================================================
+   PREMIUM FOOTER
+========================================================= */
+
+.footer.main.offers {
+    padding: 70px 0 40px;
+}
+
+.footer .item {
+    margin-bottom: 30px;
+}
+
+.footer .card h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-link-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-link-list li {
+    margin-bottom: 12px;
+}
+
+.footer-link-list li a {
+    color: #b8b8b8;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-link-list li a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+}
+
+/* Bottom Bar */
+
+.oa-bottom-bar {
+    background: #000;
+    padding: 18px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.oa-footer-copy {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.oa-footer-copy a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.oa-footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.oa-footer-links a {
+    color: #d8d8d8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.oa-footer-links a:hover {
+    color: #ffffff;
+}
+
+.oa-footer-links span {
+    color: rgba(255,255,255,0.3);
+}
+
+.oa-footer-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+}
+
+.oa-footer-social a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.oa-footer-social a:hover {
+    transform: translateY(-3px);
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .footer.main.offers {
+        padding: 50px 0 20px;
+    }
+
+    .oa-footer-copy,
+    .oa-footer-links,
+    .oa-footer-social {
+        text-align: center;
+        justify-content: center;
+        margin-top: 14px;
+    }
+
+    .oa-footer-social {
+        margin-bottom: 5px;
+    }
+}
+```
+
     </style>
 
 </head>
@@ -486,29 +615,51 @@
                 </div>
             </div>
         </section>
+ 
+<section class="bottom-bar oa-bottom-bar">
+    <div class="container">
+        <div class="row align-items-center">
 
-        <section class="bottom-bar" style="background-color: #000;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 p-0 text-left">
-                        <ul class="navbar-nav text-left text-lg-left">
-                            <li class="nav-item d-block d-md-inline-flex">
-                                <a href="https://eoan.co.in/" target="_blank" class="nav-link">
-                                    © 2026 - All rights reserved. Oceano Apex is maintained by Eoan.
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 p-0 text-left text-lg-right">
-                        <ul class="navbar-nav text-left text-lg-right">
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-facebook-f m-0"></i></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter m-0"></i></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin-in m-0"></i></a></li>
-                        </ul>
-                    </div>
+            <!-- Left -->
+            <div class="col-lg-4 col-md-12">
+                <div class="oa-footer-copy">
+                    © 2026 - All rights reserved.
+                    <strong>Oceano Apex</strong>
+                    is maintained by
+                    <a href="https://eoan.co.in/" target="_blank">Eoan</a>.
                 </div>
             </div>
-        </section>
+
+            <!-- Center -->
+            <div class="col-lg-4 col-md-12">
+                <div class="oa-footer-links">
+                    <a href="#">Terms of Use</a>
+                    <span>|</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-4 col-md-12">
+                <div class="oa-footer-social">
+                    <a href="https://www.facebook.com/oceanoapex/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/oceanoapex" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/oceano-apex" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> 
+
 
     </footer>
 
