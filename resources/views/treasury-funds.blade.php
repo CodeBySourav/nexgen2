@@ -17,7 +17,7 @@
                     <div class="swiper-slide slide-center">
 
                         <!-- Media -->
-                        <div class="parallax-y-bg" style="background-image:url(images/bg-8.jpg)"></div>
+                        <div class="parallax-y-bg" style="background-image:url(images/image-treasure-management-1.jpg)"></div>
 
                         <div class="slide-content row">
                             <div class="col-12 d-flex justify-content-start justify-content-md-end inner">
@@ -51,12 +51,8 @@
                                                 <i class="icon-arrow-down mr-3"></i>
                                                 <select name="info" class="form-control field-info" required>
                                                     <option value="" selected disabled>More Info</option>
-                                                    <option>Audit & Assurance</option>
+                                                    <option>Hedge Funds</option>
                                                     <option>Treasury Management</option>
-                                                    <option>Analytics and M&A</option>
-                                                    <option>Middle Marketing</option>
-                                                    <option>Legal Consulting</option>
-                                                    <option>Regulatory Risk</option>
                                                     <option>Other</option>
                                                 </select>
                                             </div>

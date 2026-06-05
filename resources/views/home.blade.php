@@ -29,20 +29,18 @@
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide slide-center">
                                                 <img fetchpriority="high" width="1920" height="1064" decoding="async"
-                                                    src="images/bg-1.jpg" alt="Oceano Apex Dubai" class="full-image">
+                                                    src="images/bg-211.jpg" alt="Oceano Apex Dubai" class="full-image">
                                                 <div class="slide-content row">
                                                     <div
                                                         class="col-12 d-flex justify-content-start justify-content-lg-start text-left text-md-left inner">
                                                         <div class="slide-width" style="width: 100%">
                                                             <h1 class="heading title" data-aos="zoom-in"
                                                                 data-aos-delay="400">
-                                                                A Boutique Firm.<br>Uncompromising Standards.
+                                                               A Boutique Firm.</br>
                                                             </h1>
                                                             <p class="paragraph description" data-aos="zoom-in"
                                                                 data-aos-delay="800">
-                                                                Oceano Apex is a boutique wealth management firm offering
-                                                                personalised financial solutions tailored to each client's
-                                                                unique goals.
+                                                                Oceano Apex is a boutique wealth management firm 
                                                             </p>
                                                             <div class="buttons buttons" data-aos="fade-up"
                                                                 data-aos-delay="1200">
@@ -99,7 +97,7 @@
                                             <!-- Slide 3 -->
                                             <div class="swiper-slide slide-center">
                                                 <img width="1920" height="1064" decoding="async"
-                                                    src="images/bg-3.jpg" alt="Dubai Office Oceano Apex" class="full-image">
+                                                    src="images/bg-31.jpg" alt="Dubai Office Oceano Apex" class="full-image">
                                                 <div class="slide-content row">
                                                     <div
                                                         class="col-12 d-flex justify-content-start justify-content-lg-end text-left text-md-right inner">

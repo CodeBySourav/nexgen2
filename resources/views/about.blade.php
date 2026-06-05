@@ -173,7 +173,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 p-0 image">
-                        <img src="images/about-3.jpg" class="fit-image" alt="Oceano Apex Values">
+                        <img src="images/about-31.jpg" class="fit-image" alt="Oceano Apex Values">
                     </div>
                 </div>
             </div>
