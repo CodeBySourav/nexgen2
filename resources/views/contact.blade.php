@@ -128,11 +128,11 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8"
+                                    <a href="https://maps.app.goo.gl/6gaH3ejZi7YYtPge6"
                                     target="_blank" class="nav-link">
                                         <i class="fas fa-map-marker-alt mr-2"></i>
-                                        Meydan Grandstand, 6th Floor,<br>
-                                         Meydan Road, Nad Al Sheba, Dubai, UAE
+                                        202, Second Floor, Ontario Tower,<br>
+                                        Business Bay, Dubai, UAE
                                     </a>
                                 </li>
                                  
@@ -234,11 +234,11 @@
                                 <a href="mailto:dubai@oceanoapex.com">dubai@oceanoapex.com</a>
                             </li>
                             <li>
-                                <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8" target="_blank">
+                                <a href="https://maps.app.goo.gl/6gaH3ejZi7YYtPge6" target="_blank">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span>
-                                        Meydan Grandstand, 6th Floor, Meydan Road, 
-                                        Nad Al Sheba, Dubai, UAE
+                                        202, Second Floor, Ontario Tower,<br>
+                                        Business Bay, Dubai, UAE
                                     </span>
                                 </a>
                             </li>

@@ -1193,8 +1193,8 @@
                                                                 <i class="list-icon fas fa-map-marker-alt"></i>
                                                             </div>
                                                             <span class="list-text">
-                                                                Meydan Grandstand, 6th Floor,<br>
-                                                                Meydan Road, Nad Al Sheba, Dubai, UAE
+                                                                202, Second Floor, Ontario Tower,<br>
+                                                                Business Bay, Dubai, UAE
                                                             </span>
                                                         </a>
                                                     </li>
