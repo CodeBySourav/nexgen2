@@ -516,42 +516,5 @@ section {
     }
 }
 </style>
-@if(session('success'))
 
-<div id="success-popup"
-    style="
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        z-index: 999999;
-        background: #28a745;
-        color: white;
-        padding: 15px 25px;
-        border-radius: 10px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        font-weight: 600;
-        font-size: 16px;
-        min-width: 300px;
-    ">
-
-    {{ session('success') }}
-
-</div>
-
-<script>
-    setTimeout(function () {
-        let popup = document.getElementById('success-popup');
-
-        if (popup) {
-            popup.style.transition = "0.5s";
-            popup.style.opacity = "0";
-
-            setTimeout(() => {
-                popup.remove();
-            }, 500);
-        }
-    }, 3000);
-</script>
-
-@endif
 @endsection

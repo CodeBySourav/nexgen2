@@ -326,7 +326,7 @@
             }
         }
 
-        ```css 
+ 
 /* =========================================================
    PREMIUM FOOTER
 ========================================================= */
@@ -452,7 +452,65 @@
         margin-bottom: 5px;
     }
 }
-```
+```css id="c6ahdo"
+/* =========================================================
+   FOOTER CONTACT FORM
+========================================================= */
+
+.footer-form-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 25px;
+    height: 100%;
+}
+
+.footer-form-card h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-form-card .form-control {
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #ffffff;
+    padding: 12px 15px;
+    font-size: 14px;
+}
+
+.footer-form-card .form-control::placeholder {
+    color: #bfbfbf;
+}
+
+.footer-form-card select.form-control {
+    color: #bfbfbf;
+}
+
+.footer-form-card .btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.footer-form-card .alert-success {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .footer-form-card {
+        margin-top: 30px;
+    }
+} 
 
     </style>
 
@@ -601,16 +659,81 @@
                             </ul>
                         </div>
                     </div>
+ 
+<div class="col-12 col-md-6 col-lg-3 item">
 
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div class="card">
-                            <h4>Support</h4>
-                            <ul class="footer-link-list">
-                                <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
+    <div class="footer-form-card">
+
+        <h4>Quick Contact</h4>
+ 
+        <form action="{{ route('contact.submit') }}"
+              method="POST"
+              id="nexgen-simple-form"
+              class="nexgen-simple-form">
+
+            @csrf
+
+            <div class="row form-group-margin">
+
+                <div class="col-12 m-0 p-2 input-group">
+                    <input type="text"
+                           name="name"
+                           class="form-control field-name"
+                           placeholder="Name"
+                           required>
+                </div>
+
+                <div class="col-12 m-0 p-2 input-group">
+                    <input type="email"
+                           name="email"
+                           class="form-control field-email"
+                           placeholder="Email"
+                           required>
+                </div>
+
+                <div class="col-12 m-0 p-2 input-group">
+                    <input type="text"
+                           name="phone"
+                           class="form-control field-phone"
+                           placeholder="Phone"
+                           required>
+                </div>
+
+                <div class="col-12 m-0 p-2 input-group">
+                    <select name="info"
+                            class="form-control field-info"
+                            required>
+
+                        <option value="" selected disabled>
+                            More Info
+                        </option>
+
+                        <option>Audit & Assurance</option>
+                        <option>Treasury Funds</option>
+                        <option>Analytics and M&A</option>
+                        <option>Middle Marketing</option>
+                        <option>Legal Consulting</option>
+                        <option>Regulatory Risk</option>
+                        <option>Other</option>
+
+                    </select>
+                </div>
+
+                <div class="col-12 m-0 p-2">
+                    <button type="submit"
+                            class="btn primary-button btn-block">
+                        GET IN TOUCH
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div> 
+
 
                 </div>
             </div>
@@ -1022,7 +1145,7 @@
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
                         <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
                         <li class="nav-item"><a href="{{ asset('service-hedge-funds') }}" class="nav-link">HEDGE FUNDS</a></li>
-                        <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">Treasury Management</a></li>
+                        <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">TREASURY MANAGEMENT</a></li>
                         <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">CONTACT</a></li>
                     </ul>
                 </div>
@@ -1273,5 +1396,73 @@
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <!-- Restore correct parallax background image after theme JS override -->
+    <script>
+    (function() {
+        var saved = [];
+        document.querySelectorAll('#slider .parallax-y-bg').forEach(function(el) {
+            var bg = el.style.backgroundImage;
+            if (bg && bg.indexOf('url') !== -1) {
+                saved.push({ el: el, bg: bg });
+            }
+        });
+        function restore() {
+            saved.forEach(function(item) {
+                item.el.style.backgroundImage = item.bg;
+                item.el.style.backgroundSize = 'cover';
+                item.el.style.backgroundPosition = 'center center';
+                item.el.style.backgroundAttachment = 'scroll';
+            });
+        }
+        window.addEventListener('load', restore);
+        setTimeout(restore, 300);
+        setTimeout(restore, 800);
+    })();
+    </script>
+
+
+@if(session('success'))
+
+<div id="success-popup"
+    style="
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 999999;
+        background: #28a745;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        font-weight: 600;
+        font-size: 16px;
+        min-width: 300px;
+        transition: opacity 0.5s ease;
+    ">
+
+    {{ session('success') }}
+
+</div>
+
+<script>
+    setTimeout(function () {
+
+        let popup = document.getElementById('success-popup');
+
+        if (popup) {
+
+            popup.style.opacity = "0";
+
+            setTimeout(function () {
+                popup.remove();
+            }, 500);
+
+        }
+
+    }, 5000);
+
+</script>
+
+@endif
 </body>
 </html>
