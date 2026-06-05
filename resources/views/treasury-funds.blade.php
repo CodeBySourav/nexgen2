@@ -17,7 +17,7 @@
                     <div class="swiper-slide slide-center">
 
                         <!-- Media -->
-                        <div class="parallax-y-bg" style="background-image:url(images/bg-10.jpeg)"></div>
+                        <div class="parallax-y-bg" style="background-image:url(images/bg-8.jpg)"></div>
 
                         <div class="slide-content row">
                             <div class="col-12 d-flex justify-content-start justify-content-md-end inner">
