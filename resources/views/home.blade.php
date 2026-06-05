@@ -1136,7 +1136,7 @@
                                                 <br>
                                                 <br>
                                                 <br>
-                                                    <h2 class="heading">Oceano Apex — Dubai</h2>
+                                                    <h2 class="heading" style="color: #dbc49d;">Oceano Apex — Dubai</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -1145,7 +1145,7 @@
                                             data-widget_type="nxg-paragraph.default">
                                             <div class="elementor-widget-container">
                                                 <div class="text-left">
-                                                    <p class="paragraph">
+                                                    <p class="paragraph" style="color: #dbc49d;">
                                                         No obligation. Just clarity. Our first conversation is always
                                                         complimentary — a dedicated advisor will respond within one
                                                         business day.
