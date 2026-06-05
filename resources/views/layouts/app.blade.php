@@ -871,7 +871,7 @@
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
                         <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
                         <li class="nav-item"><a href="{{ asset('service-hedge-funds') }}" class="nav-link">HEDGE FUNDS</a></li>
-                        <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">Treasury Management</a></li>
+                        <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">TREASURY MANAGEMENT</a></li>
                         <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">CONTACT</a></li>
                     </ul>
                 </div>
@@ -1121,6 +1121,30 @@
         }, 500);
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Restore correct parallax background image after theme JS override -->
+    <script>
+    (function() {
+        var saved = [];
+        document.querySelectorAll('#slider .parallax-y-bg').forEach(function(el) {
+            var bg = el.style.backgroundImage;
+            if (bg && bg.indexOf('url') !== -1) {
+                saved.push({ el: el, bg: bg });
+            }
+        });
+        function restore() {
+            saved.forEach(function(item) {
+                item.el.style.backgroundImage = item.bg;
+                item.el.style.backgroundSize = 'cover';
+                item.el.style.backgroundPosition = 'center center';
+                item.el.style.backgroundAttachment = 'scroll';
+            });
+        }
+        window.addEventListener('load', restore);
+        setTimeout(restore, 300);
+        setTimeout(restore, 800);
+    })();
+    </script>
 
 </body>
 </html>
