@@ -115,14 +115,14 @@
             font-weight: 400;
         }
         .signature-box span {
-            font-family: Arial, sans-serif;
+            font-family: Manrope, sans-serif;
             font-size: 18px;
             color: #6c7a89;
             margin-left: 10px;
         }
 
         /* ── Testimonial carousel ── */
-        body { font-family: Arial; }
+        body { font-family: Manrope; }
         .testimonial-style1-area { padding: 60px 0; }
         .single-testimonial-style1 {
             background: #f5f5f5;
