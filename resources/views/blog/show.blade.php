@@ -24,7 +24,7 @@
 <section class="py-5" style="background-color: #212529;">
     <div class="container text-white">
 
-        <h1 class="text-center mt-4">
+        <h1 class="text-center mt-5">
             {{ $post->title }}
         </h1>
 
