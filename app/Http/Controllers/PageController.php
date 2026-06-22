@@ -5,31 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Page;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\File;
+
 
 
 class PageController extends Controller
 {
 
-public function uploadImage(Request $request)
-{
-    if ($request->hasFile('file')) {
 
-        $image = $request->file('file');
-
-        $filename = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
-
-        $image->move(public_path('uploads/blogs'), $filename);
-
-        return response()->json([
-            'location' => asset('uploads/blogs/' . $filename)
-        ]);
-    }
-
-    return response()->json([
-        'error' => 'Image upload failed'
-    ], 400);
-}
     public function index()
     {
         $pages = Page::latest()->get();

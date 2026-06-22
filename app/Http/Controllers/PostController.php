@@ -6,9 +6,30 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Models\Post;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
 
 class PostController extends Controller
 {
+
+    public function uploadImage(Request $request)
+    {
+        if ($request->hasFile('file')) {
+
+            $image = $request->file('file');
+
+            $filename = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+
+            $image->move(public_path('uploads/blogs'), $filename);
+
+            return response()->json([
+                'location' => asset('uploads/blogs/' . $filename)
+            ]);
+        }
+
+        return response()->json([
+            'error' => 'Image upload failed'
+        ], 400);
+    }
     public function index()
     {
         Log::info('test');
