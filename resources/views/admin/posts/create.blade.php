@@ -126,6 +126,56 @@
 <!-- Summernote JS -->
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.js"></script>
 
+
+<script>
+$(document).ready(function () {
+
+    $('#editor').summernote({
+        height: 500,
+
+        callbacks: {
+
+            onImageUpload: function(files) {
+                uploadImage(files[0]);
+            }
+
+        }
+    });
+
+    function uploadImage(file) {
+
+        let data = new FormData();
+        data.append("file", file);
+
+        $.ajax({
+            url: "{{ route('upload.image') }}",
+            method: "POST",
+            data: data,
+            cache: false,
+            contentType: false,
+            processData: false,
+
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+
+            success: function(response) {
+
+                $('#editor').summernote(
+                    'insertImage',
+                    response.location
+                );
+
+            },
+
+            error: function() {
+                alert('Image upload failed');
+            }
+        });
+    }
+
+});
+</script>
 <script>
 $(document).ready(function() {
     $('#editor').summernote({

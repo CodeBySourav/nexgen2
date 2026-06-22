@@ -17,7 +17,12 @@
                 <div class="col-md-6 col-lg-4 mb-3">
                     <article class="card h-100 border-0 shadow-sm hover-shadow transition">
                         {{-- Optional: Add an image if your model has one --}}
-                        {{-- <img src="{{ $post->image_url }}" class="card-img-top" alt="{{ $post->title }}"> --}}
+                         @php
+                            preg_match('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->content, $matches);
+                            $image = $matches[1] ?? asset('images/default-blog.jpg');
+                            @endphp
+
+                            <img src="{{ $image }}" class="card-img-top" alt="{{ $post->title }}">
                         
                         <div class="card-body p-4">
                             <div class="mb-2">
