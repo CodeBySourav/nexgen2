@@ -54,7 +54,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/upload-image', [PostController::class, 'uploadImage'])
     ->name('upload.image');
 
-    Route::resource('users', UserController::class);
+    Route::resource('users', UserController::class) ->middleware(['admin']);
     
 });
 
