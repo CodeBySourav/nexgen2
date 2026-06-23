@@ -576,7 +576,7 @@
                 <div class="ml-auto"></div>
                 <ul id="menu-nexgen-menu-1" class="navbar-nav items right">
                     <li class="menu-item nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
-                    <li class="menu-item nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
+                    <li class="menu-item nav-item"><a href="{{ url('about') }}" class="nav-link">ABOUT</a></li>
                     <li class="menu-item nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -604,7 +604,7 @@
                 </ul>
                 <ul class="navbar-nav action d-md-block d-sm-block d-none">
                     <li class="nav-item">
-                        <a href="{{ route('contact') }}" target="_blank" class="btn primary-button">CONTACT</a>
+                        <a href="{{ url('contact') }}" target="_blank" class="btn primary-button">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -634,7 +634,7 @@
                         </div>
                         <ul class="navbar-nav action content-block">
                             <li class="nav-item">
-                                <a href="{{ route('contact') }}" class="btn secondary-button">GET IN TOUCH</a>
+                                <a href="{{ url('contact') }}" class="btn secondary-button">GET IN TOUCH</a>
                             </li>
                         </ul>
                     </div>
@@ -643,8 +643,8 @@
                         <div class="card">
                             <h4>About</h4>
                             <ul class="footer-link-list">
-                                <li><a href="{{ route('about') }}">About Us</a></li>
-                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                <li><a href="{{ url('about') }}">About Us</a></li>
+                                <li><a href="{{ url('contact') }}">Contact</a></li>
                                 <li><a href="#">Blog</a></li>
                             </ul>
                         </div>
@@ -1139,10 +1139,10 @@
                 <div class="menu modal-body">
                     <ul class="navbar-nav items">
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">HOME</a></li>
-                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a href="{{ url('about') }}" class="nav-link">ABOUT</a></li>
                         <li class="nav-item"><a href="{{ asset('service-hedge-funds') }}" class="nav-link">HEDGE FUNDS</a></li>
                         <li class="nav-item"><a href="{{ asset('service-treasury-funds') }}" class="nav-link">TREASURY MANAGEMENT</a></li>
-                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">CONTACT</a></li>
+                        <li class="nav-item"><a href="{{ url('contact') }}" class="nav-link">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
