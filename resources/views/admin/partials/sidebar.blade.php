@@ -22,5 +22,13 @@
             <span>Pages</span>
         </a>
 
+        @if(auth()->check() && auth()->user()->role == 'admin')
+            <a href="{{ route('users.index') }}"
+            class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium
+            {{ request()->routeIs('users.*') ? 'text-indigo-600 bg-indigo-50' : 'text-gray-600 hover:bg-gray-50 hover:text-indigo-600' }}">
+                <i class="fas fa-users"></i>
+                <span>Users</span>
+            </a>
+        @endif
     </nav>
 </aside>

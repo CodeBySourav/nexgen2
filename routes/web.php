@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Contact_RequestsController;
 use App\Http\Controllers\ContactRequest2Controller;
+use App\Http\Controllers\UserController;
 
 
 Route::get('/', function () {
@@ -52,6 +53,8 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/upload-image', [PostController::class, 'uploadImage'])
     ->name('upload.image');
+
+    Route::resource('users', UserController::class);
     
 });
 
