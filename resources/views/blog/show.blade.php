@@ -66,4 +66,12 @@
             </div>
         </div>
     </section>
+
+    <style>
+    .slider-h-auto.no-slider .inner { 
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    </style>
+
 @endsection
