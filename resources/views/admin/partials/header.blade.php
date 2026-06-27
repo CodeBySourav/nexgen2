@@ -32,8 +32,13 @@
                 </svg>
             </span>
             <input type="text" 
+                   id="globalSearch"
                    placeholder="Search here..." 
                    class="w-full bg-[#f8faf9] text-xs font-semibold text-gray-700 placeholder-gray-400 rounded-xl pl-10 pr-4 py-2.5 border border-transparent focus:outline-none focus:bg-white focus:border-gray-200 transition-all shadow-inner-sm">
+
+            <div id="searchResults"
+                class="hidden absolute top-full left-0 w-full bg-white rounded-xl shadow-xl mt-2 border max-h-80 overflow-y-auto z-50">
+            </div>
         </div>
 
         <!-- Session Profiler Metrics -->
@@ -57,3 +62,96 @@
 
     </div>
 </header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const input = document.getElementById('globalSearch');
+    const results = document.getElementById('searchResults');
+
+    if (!input) return;
+
+    let timeout = null;
+
+    input.addEventListener('keyup', function () {
+
+        clearTimeout(timeout);
+
+        const keyword = this.value.trim();
+
+        if (keyword.length < 2) {
+            results.innerHTML = '';
+            results.classList.add('hidden');
+            return;
+        }
+
+        timeout = setTimeout(() => {
+
+            fetch(`{{ route('global.search') }}?q=${encodeURIComponent(keyword)}`)
+                .then(response => response.json())
+                .then(data => {
+
+                    let html = '';
+
+                    if (data.length === 0) {
+                        html = `
+                            <div class="px-4 py-3 text-sm text-gray-500">
+                                No results found
+                            </div>
+                        `;
+                    }
+
+                    data.forEach(item => {
+
+                        let badgeColor = '';
+
+                        if (item.type === 'Blog')
+                            badgeColor = 'bg-green-100 text-green-700';
+
+                        if (item.type === 'Page')
+                            badgeColor = 'bg-blue-100 text-blue-700';
+
+                        if (item.type === 'User')
+                            badgeColor = 'bg-orange-100 text-orange-700';
+
+                        html += `
+                        <a href="${item.url}"
+                           class="flex justify-between items-center px-4 py-3 hover:bg-gray-50 border-b">
+
+                            <div>
+                                <div class="font-semibold text-sm text-gray-800">
+                                    ${item.title}
+                                </div>
+
+                                ${item.subtitle
+                                    ? `<div class="text-xs text-gray-500">${item.subtitle}</div>`
+                                    : ''
+                                }
+                            </div>
+
+                            <span class="text-[10px] px-2 py-1 rounded-full ${badgeColor}">
+                                ${item.type}
+                            </span>
+
+                        </a>`;
+                    });
+
+                    results.innerHTML = html;
+                    results.classList.remove('hidden');
+
+                });
+
+        }, 300);
+
+    });
+
+    document.addEventListener('click', function (e) {
+
+        if (!input.contains(e.target) && !results.contains(e.target)) {
+            results.classList.add('hidden');
+        }
+
+    });
+
+});
+</script>
