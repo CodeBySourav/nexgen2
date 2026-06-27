@@ -23,7 +23,7 @@
                     Cancel
                 </a>
                 <button type="submit"
-                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-xl font-semibold text-sm shadow-md transition-all">
+                        class="bg-[#4cb790] hover:bg-[#3fa37f] text-white px-6 py-2.5 rounded-xl font-semibold text-sm shadow-md transition-all">
                     Publish Post
                 </button>
             </div>
@@ -42,18 +42,16 @@
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Post Title</label>
                             <input type="text" name="title" value="{{ old('title') }}" required
-                                   class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none">
+                                   class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#4cb790]/20 focus:border-[#4cb790] outline-none transition-all">
                             @error('title')
-                                <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                <p class="text-[#ff6d55] text-xs mt-1">{{ $message }}</p>
                             @enderror
                         </div>
 
                         <!-- Summernote Editor -->
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Content Body</label>
-                            <textarea id="editor" name="content">
-                                {{ old('content') }}
-                            </textarea>
+                            <textarea id="editor" name="content">{{ old('content') }}</textarea>
                         </div>
 
                     </div>
@@ -67,21 +65,20 @@
 
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase mb-1">SEO Title</label>
-                            <input type="text" name="seo_title"
-                                   value="{{ old('seo_title') }}"
-                                   class="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none">
+                            <input type="text" name="seo_title" value="{{ old('seo_title') }}"
+                                   class="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:ring-2 focus:ring-[#4cb790]/20 focus:border-[#4cb790] transition-all">
                         </div>
 
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase mb-1">SEO Description</label>
                             <textarea name="seo_description" rows="3"
-                                      class="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none">{{ old('seo_description') }}</textarea>
+                                      class="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:ring-2 focus:ring-[#4cb790]/20 focus:border-[#4cb790] transition-all">{{ old('seo_description') }}</textarea>
                         </div>
 
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase mb-1">JSON-LD Schema</label>
                             <textarea name="schema_markup" rows="4"
-                                      class="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg font-mono text-xs outline-none">{{ old('schema_markup') }}</textarea>
+                                      class="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg font-mono text-xs outline-none focus:ring-2 focus:ring-[#4cb790]/20 focus:border-[#4cb790] transition-all">{{ old('schema_markup') }}</textarea>
                         </div>
 
                     </div>
@@ -103,15 +100,14 @@
                                    {{ old('status', '1') == '1' ? 'checked' : '' }}
                                    class="sr-only peer">
 
-                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer
-                                        peer-checked:after:translate-x-full peer-checked:after:border-white
-                                        after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                                        after:bg-white after:border-gray-300 after:border after:rounded-full
-                                        after:h-5 after:w-5 after:transition-all peer-checked:bg-green-500">
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer 
+                                        peer-checked:after:translate-x-full peer-checked:after:border-white 
+                                        after:content-[''] after:absolute after:top-[2px] after:left-[2px] 
+                                        after:bg-white after:border-gray-300 after:border after:rounded-full 
+                                        after:h-5 after:w-5 after:transition-all peer-checked:bg-[#4cb790]">
                             </div>
                         </label>
                     </div>
-
                 </div>
 
             </div>
@@ -121,7 +117,7 @@
 </main>
 
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <!-- Summernote JS -->
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.js"></script>
@@ -129,7 +125,7 @@
 <script>
 $(document).ready(function() {
     $('#editor').summernote({
-        height: 450,
+        height: 480,
         placeholder: 'Start writing your blog post...',
         tabsize: 2,
         toolbar: [
@@ -145,5 +141,22 @@ $(document).ready(function() {
     });
 });
 </script>
+
+<style>
+/* Custom configuration mapping framework components cleanly into container architecture */
+.note-editor.note-frame {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    background: #f9fafb !important;
+}
+.note-toolbar {
+    background-color: #f3f4f6 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+.note-editable {
+    background: #ffffff !important;
+}
+</style>
 
 @endsection

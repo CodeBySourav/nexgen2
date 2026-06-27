@@ -23,7 +23,7 @@
         </div>
 
         <a href="{{ route('posts.create') }}"
-           class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 shadow-sm transition-all">
+           class="bg-[#4cb790] hover:bg-[#3fa37f] text-white px-5 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 shadow-sm transition-all">
             <i class="fas fa-plus"></i>
             Create New Post
         </a>
@@ -82,13 +82,13 @@
 
                             @if($post->status)
 
-                                <span class="bg-green-100 text-green-700 text-[11px] font-bold px-3 py-1 rounded-full">
+                                <span class="bg-[#4cb790]/10 text-[#4cb790] text-[11px] font-bold px-3 py-1 rounded-full">
                                     Published
                                 </span>
 
                             @else
 
-                                <span class="bg-yellow-100 text-yellow-700 text-[11px] font-bold px-3 py-1 rounded-full">
+                                <span class="bg-[#ff6d55]/10 text-[#ff6d55] text-[11px] font-bold px-3 py-1 rounded-full">
                                     Draft
                                 </span>
 
@@ -101,7 +101,7 @@
 
                             <a href="{{ route('blog.show', $post->slug) }}"
                                target="_blank"
-                               class="text-indigo-600 hover:underline">
+                               class="text-[#4cb790] hover:text-[#3fa37f] hover:underline font-medium">
 
                                 /{{ $post->slug }}
 
@@ -121,7 +121,7 @@
 
                                 <!-- Edit -->
                                 <a href="{{ route('posts.edit', $post->id) }}"
-                                   class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center hover:bg-indigo-100 transition">
+                                   class="w-9 h-9 rounded-lg bg-[#4cb790]/10 text-[#4cb790] flex items-center justify-center hover:bg-[#4cb790] hover:text-white transition">
 
                                     <i class="fas fa-edit"></i>
 
@@ -136,7 +136,7 @@
                                     @method('DELETE')
 
                                     <button type="submit"
-                                            class="w-9 h-9 rounded-lg bg-red-50 text-red-600 flex items-center justify-center hover:bg-red-100 transition">
+                                            class="w-9 h-9 rounded-lg bg-[#ff6d55]/10 text-[#ff6d55] flex items-center justify-center hover:bg-[#ff6d55] hover:text-white transition">
 
                                         <i class="fas fa-trash"></i>
 
@@ -200,7 +200,7 @@ $(document).ready(function () {
 
 <style>
 
-/* Search */
+/* Search input field customization */
 .dataTables_filter input {
     border: 1px solid #e5e7eb !important;
     border-radius: 12px !important;
@@ -208,34 +208,48 @@ $(document).ready(function () {
     background: #f9fafb !important;
     outline: none !important;
     margin-left: 10px !important;
+    transition: all 0.2s ease;
+}
+.dataTables_filter input:focus {
+    border-color: #4cb790 !important;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(76, 183, 144, 0.1) !important;
 }
 
-/* Dropdown */
+/* Page Selection Dropdown */
 .dataTables_length select {
     border: 1px solid #e5e7eb !important;
     border-radius: 10px !important;
     padding: 6px 10px !important;
     background: #f9fafb !important;
+    outline: none !important;
+}
+.dataTables_length select:focus {
+    border-color: #4cb790 !important;
 }
 
-/* Pagination */
+/* Base styling overrides for clean pagination blocks */
 .dataTables_paginate .paginate_button {
     border-radius: 10px !important;
     margin: 0 3px !important;
+    border: 1px solid transparent !important;
+    transition: all 0.2s ease !important;
 }
 
-/* Active */
-.dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    background: #4f46e5 !important;
+/* Active Page State */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #4cb790 !important;
     color: white !important;
-    border: none !important;
+    border-color: #4cb790 !important;
 }
 
-/* Hover */
+/* Inactive Hover States */
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-    background: #eef2ff !important;
-    color: #4f46e5 !important;
-    border: none !important;
+    background: #4cb790/10 !important;
+    background-color: rgba(76, 183, 144, 0.08) !important;
+    color: #4cb790 !important;
+    border-color: transparent !important;
 }
 
 </style>
