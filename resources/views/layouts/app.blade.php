@@ -725,7 +725,30 @@
             </div>
 
         </form>
+ <div class="content-block contact-details mb-3">
+                         
+                            <li class="nav-item mb-2">
+                                <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8" target="_blank" class="nav-link text-left d-flex align-items-start p-0">
+                                    <div class="icon-wrapper mr-2 pt-1">
+                                        <i class="list-icon fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <span class="list-text">
+                                        202, Second Floor, Ontario Tower,<br>
+                                        Business Bay, Dubai, UAE
+                                    </span>
+                                </a>
+                            </li>
+                         
+                    </div>
 
+                    <div class="content-block action-buttons d-flex flex-column gap-2">
+                         
+                        <div>
+                            <button type="button" class="btn button w-100 text-center" data-toggle="modal" data-target="#mapModal">
+                                VIEW MAP
+                            </button>
+                        </div>
+                    </div>
     </div>
 
 </div> 

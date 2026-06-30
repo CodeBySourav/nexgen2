@@ -1186,36 +1186,23 @@
                                                             </div>
                                                             <span class="list-text">www.oceanoapex.com</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8" 
-                                                                target="_blank" 
-                                                                class="nav-link text-left">
-                                                            <div class="icon-wrapper">
-                                                                <i class="list-icon fas fa-map-marker-alt"></i>
-                                                            </div>
-                                                            <span class="list-text">
-                                                                202, Second Floor, Ontario Tower,<br>
-                                                                Business Bay, Dubai, UAE
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                     
+                                                    </li> 
                                                 </ul>
                                             </div>
                                         </div>
                                         <style>
                                         .navbar-nav .nav-link{
                                                 display:flex;
-                                                align-items:flex-start;
-                                                gap:15px;
-                                                padding:12px 0;
+                                                align-items:center;      /* Center icon & text vertically */
+                                                gap:16px;
+                                                padding:14px 0;
+                                                text-decoration:none;
                                             }
 
-                                            .icon-wrapper{
-                                                min-width:50px;
+                                            .navbar-nav .icon-wrapper{
                                                 width:50px;
                                                 height:50px;
+                                                min-width:50px;
                                                 border-radius:50%;
                                                 background:#2b241d;
                                                 display:flex;
@@ -1224,55 +1211,25 @@
                                                 flex-shrink:0;
                                             }
 
-                                            .list-icon{
-                                                color:#d8c3a5;
+                                            .navbar-nav .list-icon{
                                                 font-size:18px;
+                                                color:#d8c3a5;
                                             }
 
-                                            .list-text{
-                                                line-height:1.7;
+                                            .navbar-nav .list-text{
+                                                display:flex;
+                                                align-items:center;
+                                                min-height:50px;        /* Same height as icon */
+                                                line-height:1.6;
                                                 color:#d8c3a5;
+                                                margin:0;
                                             }
 
                                             .navbar-nav .nav-item{
                                                 list-style:none;
                                             }
                                         </style>
-                                        <div class="elementor-element elementor-element-86c69aa elementor-widget elementor-widget-nxg-button"
-                                            data-id="86c69aa" data-element_type="widget"
-                                            data-widget_type="nxg-button.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="d-flex justify-content-start">
-                                                    <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8"
-                                                    target="_blank"
-                                                    class="btn button">
-                                                        VIEW MAP
-                                                    </a>
-                                                </div>
-
-                                                <!-- Modal [map] -->
-                                                <div id="map" class="p-0 modal fade" role="dialog"
-                                                    aria-labelledby="map" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-slideout" role="document">
-                                                        <div class="modal-content full">
-                                                            <div class="modal-header absolute" data-dismiss="modal">
-                                                                <div class="icon-wrapper">
-                                                                    <i class="icon-close fas fa-times"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-body p-0">
-                                                                <iframe loading="lazy"
-                                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178532482555!2d55.30678!3d25.17316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69c1b6e0b3c9%3A0x1!2sMeydan+Grandstand%2C+Meydan+Rd%2C+Dubai!5e0!3m2!1sen!2sae!4v1680000000000"
-                                                                    width="600" height="450"
-                                                                    style="border:0;" allowfullscreen=""
-                                                                    aria-hidden="false" tabindex="0"></iframe>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
+                                         
                                     </div>
                                 </div>
                             </div>
