@@ -197,7 +197,7 @@
                             data-id="adb2e5c" data-element_type="widget" data-widget_type="nxg-video.default">
                             <div class="elementor-widget-container">
                                 <div class="nxg-gallery">
-                                    <a href="https://www.youtube.com/watch?v=uhXVOvXLUN0"
+                                    <a href="https://www.youtube.com/watch?v=uhXVOvXLUN0?autoplay=1"
                                         class="square-image d-flex justify-content-center align-items-center">
                                         <i class="icon auto fas fa-play"></i>
                                         <img width="1600" height="720" decoding="async"

@@ -127,8 +127,22 @@
                                         www.oceanoapex.com
                                     </a>
                                 </li>
-                                
-                                  
+                                <li class="nav-item">
+                                    <a href="https://maps.app.goo.gl/6gaH3ejZi7YYtPge6"
+                                    target="_blank" class="nav-link">
+                                        <i class="fas fa-map-marker-alt mr-2"></i>
+                                        202, Second Floor, Ontario Tower,<br>
+                                        Business Bay, Dubai, UAE
+                                    </a>
+                                </li>
+                                 
+                                <li class="nav-item">
+                                    <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8"
+                                    target="_blank"
+                                    class="mt-2 btn outline-button">
+                                        VIEW MAP
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
