@@ -378,7 +378,7 @@
                         <div class="about-style1__image clearfix">
                             <div class="shape-1"></div>
                             <div class="shape-2"></div>
-                            <div class="inner">
+                            <div class="">
                                 <img src="images/our story.jpeg" alt="Oceano Apex — A Decade of Purposeful Growth">
                             </div>
                         </div>
@@ -483,7 +483,7 @@
                             data-wow-duration="1500ms">
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
-                                    <div class="inner">
+                                    <div class="">
                                         <img src="images/Free Consultation.jpeg" alt="Free Consultation">
                                     </div>
                                     <div class="counting"></div>
@@ -502,7 +502,7 @@
                             data-wow-duration="1500ms">
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
-                                    <div class="inner">
+                                    <div class="">
                                         <img src="images/Expert Advisory.jpeg" alt="Expert Advisory">
                                     </div>
                                     <div class="counting"></div>
@@ -521,7 +521,7 @@
                             data-wow-duration="1500ms">
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
-                                    <div class="inner">
+                                    <div class="">
                                         <img src="images/Tailored Strategy.jpeg" alt="Tailored Strategy">
                                     </div>
                                     <div class="counting"></div>
@@ -540,7 +540,7 @@
                             data-wow-duration="1500ms">
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
-                                    <div class="inner">
+                                    <div class="">
                                         <img src="images/Long-Term Growth.jpeg" alt="Long-Term Growth">
                                     </div>
                                     <div class="counting"></div>
