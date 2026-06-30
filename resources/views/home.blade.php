@@ -379,7 +379,7 @@
                             <div class="shape-1"></div>
                             <div class="shape-2"></div>
                             <div class="inner">
-                                <img src="images/about-style1__image-1.jpg" alt="Oceano Apex — A Decade of Purposeful Growth">
+                                <img src="images/our story.jpeg" alt="Oceano Apex — A Decade of Purposeful Growth">
                             </div>
                         </div>
                     </div>
@@ -484,7 +484,7 @@
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
                                     <div class="inner">
-                                        <img src="images/working-process-img1.jpg" alt="Free Consultation">
+                                        <img src="images/Free Consultation.jpeg" alt="Free Consultation">
                                     </div>
                                     <div class="counting"></div>
                                 </div>
@@ -503,7 +503,7 @@
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
                                     <div class="inner">
-                                        <img src="images/working-process-img2.jpg" alt="Expert Advisory">
+                                        <img src="images/Expert Advisory.jpeg" alt="Expert Advisory">
                                     </div>
                                     <div class="counting"></div>
                                 </div>
@@ -522,7 +522,7 @@
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
                                     <div class="inner">
-                                        <img src="images/working-process-img3.jpg" alt="Tailored Strategy">
+                                        <img src="images/Tailored Strategy.jpeg" alt="Tailored Strategy">
                                     </div>
                                     <div class="counting"></div>
                                 </div>
@@ -541,7 +541,7 @@
                             <div class="working-process__single-inner">
                                 <div class="img-holder">
                                     <div class="inner">
-                                        <img src="images/working-process-img4.jpg" alt="Long-Term Growth">
+                                        <img src="images/Long-Term Growth.jpeg" alt="Long-Term Growth">
                                     </div>
                                     <div class="counting"></div>
                                 </div>
