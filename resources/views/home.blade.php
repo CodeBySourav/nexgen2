@@ -197,11 +197,13 @@
                             data-id="adb2e5c" data-element_type="widget" data-widget_type="nxg-video.default">
                             <div class="elementor-widget-container">
                                 <div class="nxg-gallery">
-                                    <a href="https://vimeo.com/222990241"
+                                    <a href="https://www.youtube.com/watch?v=uhXVOvXLUN0"
                                         class="square-image d-flex justify-content-center align-items-center">
                                         <i class="icon auto fas fa-play"></i>
-                                        <img width="1600" height="720" decoding="async" src="images/video-1.jpg"
-                                            class="fit-image" alt="Oceano Apex — Boutique Wealth Management">
+                                        <img width="1600" height="720" decoding="async"
+                                            src="images/video-1.jpg"
+                                            class="fit-image"
+                                            alt="Oceano Apex — Boutique Wealth Management">
                                     </a>
                                 </div>
                             </div>
