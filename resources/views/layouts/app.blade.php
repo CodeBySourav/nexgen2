@@ -714,14 +714,16 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 item">
+                    <div class="col-12 col-md-6 col-lg-3 item mt-4">
 
                         <div class="footer-form-card">
 
-                            
-                            <div class="content-block contact-details mb-3 mt-4">
+                            <h4>Quick Contact</h4>
 
-                                <li class="nav-item mb-2 mt-4">
+                            
+                            <div class="content-block contact-details mb-3">
+
+                                <li class="nav-item mb-2">
                                     <a href="https://maps.app.goo.gl/UFZnBCqppvT9EJRD8" target="_blank"
                                         class="nav-link text-left d-flex align-items-start p-0">
                                         <div class="icon-wrapper mr-2 pt-1">
